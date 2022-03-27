@@ -1,0 +1,228 @@
+/*-----------------------------------------------------------------------------------
+
+    Author: Cristiano Borges
+    Support: cristianovieirati@gmail.com
+
+-----------------------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --color-bg: #1f1f38;
+  --color-bg-variant: #2c2c6c;
+  --color--primary: #db4f09;
+  --color--primary-variant: rgba(77, 181, 255, 0.4);
+  --secondary: #6c757d;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: rgba(255, 255, 255, 0.6);
+  --container-width-lg: 75%;
+  --container-width-md: 86%;
+  --container-width-sm: 90%;
+  --font-family-poppins: 'Poppins', sans-serif;
+  --transition: all 400ms ease;
+  --color-linear: linear-gradient(to left, #8942a8, #4439a7);
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-family: var(--font-family-poppins);
+  background: var(--color-linear);
+  color: var(--white);
+  line-height: 1.7;
+}
+
+.box-area {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.box-area li {
+	position: absolute;
+	display: block;
+	list-style: none;
+	width: 25px;
+	height: 25px;
+	background: rgba(255, 255, 255, 0.2);
+	animation: animate 20s linear infinite;
+	bottom: -150px;
+}
+.box-area li:nth-child(1) {
+	left: 30%;
+	width: 80px;
+	height: 80px;
+	animation-delay: 0s;
+}
+.box-area li:nth-child(2) {
+	left: 12%;
+	width: 30px;
+	height: 30px;
+	animation-delay: 1.5s;
+	animation-duration: 10s;
+}
+.box-area li:nth-child(3) {
+	left: 50%;
+	width: 100px;
+	height: 100px;
+	animation-delay: 5.5s;
+}
+.box-area li:nth-child(4) {
+	left: 42%;
+	width: 150px;
+	height: 150px;
+	animation-delay: 0s;
+	animation-duration: 15s;
+}
+.box-area li:nth-child(5) {
+	left: 65%;
+	width: 40px;
+	height: 40px;
+	animation-delay: 0s;
+}
+.box-area li:nth-child(6) {
+	left: 15%;
+	width: 110px;
+	height: 110px;
+	animation-delay: 3.5s;
+}
+@keyframes animate {
+	0% {
+		transform: translateY(0) rotate(0deg);
+		opacity: 1;
+	}
+	100% {
+		transform: translateY(-800px) rotate(360deg);
+		opacity: 0;
+	}
+}
+
+/*======================= GERAL STYLES======================*/
+.container {
+  width: var(--container-width-lg);
+  margin: 0 auto;
+  z-index:52;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+section {
+  margin-top: 8rem;
+  /* height: 100vh; */
+  height: auto;
+}
+
+section > h2,
+section > h5 {
+  text-align: center;
+  color: var(--light);
+}
+
+section > h2 {
+  color: var(--color--primary);
+  margin-bottom: 3rem;
+}
+
+.text-light {
+  color: var(--light);
+}
+
+a {
+   color: var(--color--primary);
+   transition: var(--transition);
+}
+
+a:hover {
+  color: var(--white);
+  transition: var(--transition);
+}
+
+.btn {
+  width: max-content;
+  display: inline-block;
+  color: var(--light);
+  padding: 0.75rem 1.2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  border: 1px solid var(--color--primary);
+  transition: var(--transition);
+}
+
+.btn:hover {
+  background: var(--white);
+  color: var(--color-bg);
+  border-color: transparent;
+}
+
+.btn-primary {
+  background: var(--color--primary);
+  color: var(--light);
+}
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+/*======================= MEDIA QUERIES (MEDIUM DEVICES)======================*/
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: var(--container-width-md);
+  }
+
+  section {
+    margin-top: 6rem;
+  }
+}
+
+/*======================= MEDIA QUERIES (SMALL DEVICES)======================*/
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: var(--container-width-sm);
+  }
+
+  section > h2 {
+    margin-top: 2rem;
+  }
+}
