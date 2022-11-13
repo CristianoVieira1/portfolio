@@ -30,7 +30,6 @@ export const PortfolioContainer = styled.div`
       margin: 1.2rem;
       padding-left: 2rem;
     }
-
   }
 
   @media screen and (max-width: 1024px) {
