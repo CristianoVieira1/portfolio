@@ -48,7 +48,7 @@ export const Sociais = styled.div`
   }
 
   @media screen and (max-width: 600px) {
-    display: none
+    display: none;
   }
 `;
 
@@ -66,6 +66,16 @@ export const MeImg = styled.div`
   padding: 3rem 0.3rem 1.5rem 0.3rem;
 `;
 
+export const Image = styled.img`
+  width: 22rem;
+  height: 30rem;
+  position: absolute;
+  left: calc(50% - 11rem);
+  top: -0rem;
+  border-radius: 12rem 12rem 0 0;
+  overflow: hidden;
+`;
+
 /*================ME=================*/
 
 export const Scroll = styled.a`
@@ -75,6 +85,6 @@ export const Scroll = styled.a`
   font-size: 3.2rem;
 
   @media screen and (max-width: 600px) {
-    display: none
+    display: none;
   }
 `;

@@ -10,14 +10,11 @@ const Portfolio = () => {
       <h5>Trabalhos recentes</h5>
       <h2>Portfolio</h2>
       <PortfolioContainer className="container">
-        {portData.map(({ id, video, title, github, demo }) => {
+        {portData.map(({ id, img, title, github, demo }) => {
           return (
             <article key={id}>
               <div>
-                <video src={video} controls={false} muted autoPlay={true} loop>
-                  {" "}
-                  something
-                </video>
+                <img src={img} alt="" />
               </div>
               <h3>{title}</h3>
               <PortLinks>

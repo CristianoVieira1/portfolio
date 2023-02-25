@@ -21,7 +21,7 @@ export const PortfolioContainer = styled.div`
       border-radius: 1.5rem;
       overflow: hidden;
 
-      video {
+      img {
         width: 100%;
       }
     }

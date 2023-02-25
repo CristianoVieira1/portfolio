@@ -1,8 +1,8 @@
 import React from "react";
-import ME from "../../assets/about-me1.png";
 import { FaAward } from "react-icons/fa";
 import { FiUsers } from "react-icons/fi";
 import { VscFolderLibrary } from "react-icons/vsc";
+import ME from "../../assets/about-me1.png";
 
 import { AboutContainer, AboutContent } from "./style";
 const About = () => {
@@ -29,15 +29,13 @@ const About = () => {
             </article>
             <article className="about__card">
               <FiUsers className="about__icon" />
-              <h5>
-                Front-End <br /> Web • Mobile
-              </h5>
-              <small>React, Angular, PHP, React Native, Flutter</small>
+              <h5>Front-End</h5>
+              <small>React</small>
             </article>
             <article className="about__card">
               <VscFolderLibrary className="about__icon" />
-              <h5>Back-End</h5>
-              <small>Laravel, Node</small>
+              <h5>Front-End</h5>
+              <small>React Native</small>
             </article>
           </div>
 
