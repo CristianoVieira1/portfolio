@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 export const HeaderBg = styled.header`
   height: 100vh;
@@ -77,12 +77,24 @@ export const Image = styled.img`
 `;
 
 /*================ME=================*/
+const bounce = keyframes`
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+`;
 
 export const Scroll = styled.a`
   position: absolute;
   right: -2.3rem;
   bottom: 4.5rem;
   font-size: 3.2rem;
+
+  .Icon {
+    animation: ${bounce} 2s infinite;
+  }
 
   @media screen and (max-width: 600px) {
     display: none;

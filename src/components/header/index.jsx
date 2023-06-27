@@ -1,6 +1,6 @@
 import React from "react";
 import { FaAngleDoubleDown } from "react-icons/fa";
-import ME from "../../assets/photo.jpeg";
+import ME from "../../assets/photo.jpg";
 import CTA from "./CTA";
 import HeaderSociais from "./HeaderSociais";
 
@@ -21,8 +21,8 @@ const Header = () => {
           <S.Image src={ME} alt="Cristiano Borges" />
         </S.MeImg>
 
-        <S.Scroll about="#contact">
-          <FaAngleDoubleDown />
+        <S.Scroll about="#about">
+          <FaAngleDoubleDown className="Icon" />
         </S.Scroll>
       </div>
       <Background />

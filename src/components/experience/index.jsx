@@ -1,9 +1,8 @@
 import React from "react";
 // import { BsPatchCheckFill } from 'react-icons/bs';
 import { FrontCard } from "./FrontCard";
-import { BackCard } from "./BackCard";
 // eslint-disable-next-line no-unused-vars
-import { ContainerExp, FrontEnd, BackEnd } from "./style";
+import { ContainerExp, FrontEnd } from "./style";
 
 const Experience = () => {
   return (
@@ -17,10 +16,6 @@ const Experience = () => {
             <h3>Front End Developer</h3>
             <FrontCard />
           </FrontEnd>
-          <BackEnd>
-            <h3>Back End Developer</h3>
-            <BackCard />
-          </BackEnd>
         </ContainerExp>
       </div>
     </section>

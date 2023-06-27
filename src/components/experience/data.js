@@ -1,67 +1,23 @@
 /* eslint-disable no-dupe-keys */
 export const frontData = [
   {
-    title: 'React',
-    subTitle: 'Intermediário',
+    title: "DESENVOLVEDOR REACT NATIVE / REACTJS",
+    subTitle: "Digital Business",
+    date: "05/2022 - 07/2023",
   },
   {
-    title: 'React Native',
-    subTitle: 'Intermediário',
-
+    title: "DESENVOLVEDOR FRONT-END",
+    subTitle: "BVWEB Designer",
+    date: "05/2022 - 07/2023",
   },
   {
-    title: 'Vue',
-    subTitle: 'Básico',
-
+    title: "FULL-STACK DEVELOPER",
+    subTitle: "Velty",
+    date: "04/2021 - 08/2021",
   },
   {
-    title: 'Flutter',
-    subTitle: 'Intermediário',
-  },
-  {
-    title: 'Laravel Blade',
-    subTitle: 'Intermediário',
-  },
-  {
-    title: 'Bootstrap',
-    subTitle: 'Intermediário',
-  },
-  {
-    title: 'CSS',
-    subTitle: 'Intermediário',
-  },
-  {
-    title: 'GIT',
-    subTitle: 'Intermediário',
-  }
-
-];
-
-export const backData = [
-  {
-    title: 'Laravel',
-    subTitle: 'Intermediário',
-  },
-  {
-    title: 'Nodejs',
-    subTitle: 'Intermediário',
-
-  },
-  {
-    title: 'Mysql',
-    subTitle: 'Intermediário',
-
-  },
-
-  {
-    title: 'MongoDB',
-    subTitle: 'Intermediário',
-
-  },
-  {
-    title: 'Docker',
-    subTitle: 'Intermediário',
-
+    title: "FULL-STACK DEVELOPER",
+    subTitle: "Base Digital",
+    date: "04/2020 - 04/2021",
   },
 ];
-

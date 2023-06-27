@@ -1,9 +1,9 @@
 import Cat from "../../assets/cat.png";
-import Chat from "../../assets/chat.png";
 import Colombo from "../../assets/colombo.png";
 import Gazin from "../../assets/gazin.png";
 import Redes from "../../assets/redes.png";
 import Serede from "../../assets/serede.png";
+import Siga from "../../assets/siga.png";
 
 export const portData = [
   {
@@ -44,9 +44,9 @@ export const portData = [
   },
   {
     id: 6,
-    img: Chat,
-    title: "ChatOn",
-    github: "https://github.com/CristianoVieira1/todo_chat_react-",
-    demo: "https://chat-hybri.netlify.app/",
+    img: Siga,
+    title: "Sistema Sig@",
+    github: "https://siga.sistemasiga.com.br/",
+    demo: "https://siga.sistemasiga.com.br/",
   },
 ];

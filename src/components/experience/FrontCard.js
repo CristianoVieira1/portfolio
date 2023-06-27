@@ -9,7 +9,12 @@ export const FrontCard = () => {
       {frontData.map((data, key) => {
         return (
           <div key={key}>
-            <Front key={key} title={data.title} subTitle={data.subTitle} />
+            <Front
+              key={key}
+              title={data.title}
+              subTitle={data.subTitle}
+              date={data.date}
+            />
           </div>
         );
       })}
@@ -17,7 +22,7 @@ export const FrontCard = () => {
   );
 };
 
-const Front = ({ title, subTitle }) => {
+const Front = ({ title, subTitle, date }) => {
   if (!title) return <div />;
   return (
     <article className="experience__details">
@@ -25,6 +30,7 @@ const Front = ({ title, subTitle }) => {
       <div>
         <h4>{title}</h4>
         <small className="text-light">{subTitle}</small>
+        <p className="date">{date}</p>
       </div>
     </article>
   );

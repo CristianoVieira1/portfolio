@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ContainerExp = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 2rem;
 
   > div {
@@ -35,9 +35,18 @@ export const ContainerExp = styled.div`
     display: flex;
     gap: 1rem;
 
+    h4 {
+      font-size: 1.5;
+    }
+
     svg {
       margin-top: 6px;
       color: #fff;
+    }
+
+    .date {
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 0.8rem;
     }
   }
 
@@ -61,6 +70,12 @@ export const ContainerExp = styled.div`
     > div {
       width: 100%;
       padding: 2rem 1rem;
+    }
+
+    .experience__details {
+      h4 {
+        font-size: 0.8;
+      }
     }
   }
 `;
