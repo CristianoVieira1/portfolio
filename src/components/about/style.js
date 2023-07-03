@@ -29,14 +29,14 @@ export const AboutContainer = styled.div`
     grid-template-columns: 1fr;
     gap: 0;
 
-    .about__me  {
+    .about__me {
       width: 50%;
-      margin: 2rem auto 4rem
+      margin: 2rem auto 4rem;
     }
   }
 
   @media screen and (max-width: 600px) {
-    .about__me  {
+    .about__me {
       width: 65%;
       margin: 0 auto 3rem;
     }
@@ -94,7 +94,7 @@ export const AboutContent = styled.div`
   }
 
   @media screen and (max-width: 1024px) {
-    p{
+    p {
       margin: 1rem 0 1.5rem;
     }
   }
@@ -103,9 +103,9 @@ export const AboutContent = styled.div`
     text-align: center;
     padding: 0.5rem;
 
-    .about__cards  {
+    .about__cards {
       grid-template-columns: 1fr 1fr;
-      gap: 1rem
+      gap: 1rem;
     }
 
     h5 {
@@ -114,6 +114,11 @@ export const AboutContent = styled.div`
 
     p {
       margin: 1.5rem 0;
+    }
+
+    .about__description {
+      margin: 2rem auto;
+      text-align: left;
     }
   }
 `;

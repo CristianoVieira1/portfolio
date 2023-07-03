@@ -37,7 +37,7 @@ const About = () => {
             </article>
           </div>
 
-          <p>
+          <p className="about__description">
             Sou desenvolvedor front-end com especialização em React Native e
             ReactJs. Eu sou apaixonado por programação desde sempre, e tenho
             trabalhado na área há 4 anos. Durante minha carreira, tenho me

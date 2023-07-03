@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const ContainerExp = styled.div`
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   > div {
     background: #1f1f38;
@@ -27,7 +27,7 @@ export const ContainerExp = styled.div`
 
   .experience__content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.5fr 1fr;
     row-gap: 2rem;
   }
 
@@ -74,7 +74,7 @@ export const ContainerExp = styled.div`
 
     .experience__details {
       h4 {
-        font-size: 0.8;
+        font-size: 0.8rem;
       }
     }
   }

@@ -1,6 +1,7 @@
 import Cat from "../../assets/cat.png";
 import Colombo from "../../assets/colombo.png";
 import Gazin from "../../assets/gazin.png";
+import House from "../../assets/house.png";
 import Redes from "../../assets/redes.png";
 import Serede from "../../assets/serede.png";
 import Siga from "../../assets/siga.png";
@@ -48,5 +49,12 @@ export const portData = [
     title: "Sistema Sig@",
     github: "https://siga.sistemasiga.com.br/",
     demo: "https://siga.sistemasiga.com.br/",
+  },
+  {
+    id: 7,
+    img: House,
+    title: "Ótica House",
+    github: "https://www.oticahouse.com.br",
+    demo: "https://www.oticahouse.com.br",
   },
 ];
