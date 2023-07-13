@@ -7,37 +7,39 @@ import { PortfolioContainer, PortLinks } from "./style";
 const Portfolio = () => {
   return (
     <section id="portfolio">
-      <h5>Trabalhos recentes</h5>
+      <h5>Alguns de meus projetos</h5>
       <h2>Portfolio</h2>
       <PortfolioContainer className="container">
-        {portData.map(({ id, img, title, github, demo }) => {
-          return (
-            <article key={id}>
-              <div>
-                <img src={img} alt="" />
-              </div>
-              <h3>{title}</h3>
-              <PortLinks>
-                <a
-                  href={github}
-                  className="btn"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Github
-                </a>
-                <a
-                  href={demo}
-                  className="btn btn-primary"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Demo
-                </a>
-              </PortLinks>
-            </article>
-          );
-        })}
+        {portData.map(
+          ({ id, img, title, github, demo, buttonOne, buttonTwo }) => {
+            return (
+              <article key={id}>
+                <div>
+                  <img src={img} alt="" />
+                </div>
+                <h3>{title}</h3>
+                <PortLinks>
+                  <a
+                    href={github}
+                    className="btn"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {buttonOne}
+                  </a>
+                  <a
+                    href={demo}
+                    className="btn btn-primary"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {buttonTwo}
+                  </a>
+                </PortLinks>
+              </article>
+            );
+          }
+        )}
       </PortfolioContainer>
     </section>
   );
