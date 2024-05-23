@@ -1,6 +1,6 @@
 import React from "react";
 import { FaAngleDoubleDown } from "react-icons/fa";
-import ME from "../../assets/photo.jpg";
+import ME from "../../assets/new.png";
 import CTA from "./CTA";
 import HeaderSociais from "./HeaderSociais";
 
@@ -13,7 +13,7 @@ const Header = () => {
       <div className="container header__container">
         <h5>Olá eu sou</h5>
         <h1>Cristiano Borges</h1>
-        <h5 className="text-light">Desenvolvedor front-end</h5>
+        <h5 className="text-light">React Native Developer</h5>
         <CTA />
         <HeaderSociais />
 
