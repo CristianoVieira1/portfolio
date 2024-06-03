@@ -13413,7 +13413,7 @@ table {
 /* ------------------------------------------------*/
 @font-face {
   font-family: "Phosphor-Bold";
-  src: url(/static/media/Phosphor-Bold.e6e5229c00dd90ccceac.woff2) format("woff2"), url(/static/media/Phosphor-Bold.8b3398c7d194281bf5c5.woff) format("woff"), url(/static/media/Phosphor-Bold.24d0dfc29baf6d32bc80.ttf) format("truetype"), url(/static/media/Phosphor-Bold.9bea847ee46ccee8f958.svg#Phosphor-Bold) format("svg");
+  src: url(../../static/media/Phosphor-Bold.e6e5229c00dd90ccceac.woff2) format("woff2"), url(../../static/media/Phosphor-Bold.8b3398c7d194281bf5c5.woff) format("woff"), url(../../static/media/Phosphor-Bold.24d0dfc29baf6d32bc80.ttf) format("truetype"), url(../../static/media/Phosphor-Bold.9bea847ee46ccee8f958.svg#Phosphor-Bold) format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -18427,7 +18427,7 @@ table {
 
 @font-face {
   font-family: "Phosphor-Duotone";
-  src: url(/static/media/Phosphor-Duotone.59609c30dd0c1d487e11.woff2) format("woff2"), url(/static/media/Phosphor-Duotone.d9166b70504d269b32b9.woff) format("woff"), url(/static/media/Phosphor-Duotone.15861c32578891823ba7.ttf) format("truetype"), url(/static/media/Phosphor-Duotone.9eaa7d4d6bb860014b76.svg#Phosphor-Duotone) format("svg");
+  src: url(../../static/media/Phosphor-Duotone.59609c30dd0c1d487e11.woff2) format("woff2"), url(../../static/media/Phosphor-Duotone.d9166b70504d269b32b9.woff) format("woff"), url(../../static/media/Phosphor-Duotone.15861c32578891823ba7.ttf) format("truetype"), url(../../static/media/Phosphor-Duotone.9eaa7d4d6bb860014b76.svg#Phosphor-Duotone) format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -30917,7 +30917,7 @@ table {
 
 @font-face {
   font-family: "Phosphor-Fill";
-  src: url(/static/media/Phosphor-Fill.637b7acbfd4959788cea.woff2) format("woff2"), url(/static/media/Phosphor-Fill.4e7d6ef75dc6d008ffb4.woff) format("woff"), url(/static/media/Phosphor-Fill.63a749a01b0be4cb2b3a.ttf) format("truetype"), url(/static/media/Phosphor-Fill.de17ba44c3dfea1a196e.svg#Phosphor-Fill) format("svg");
+  src: url(../../static/media/Phosphor-Fill.637b7acbfd4959788cea.woff2) format("woff2"), url(../../static/media/Phosphor-Fill.4e7d6ef75dc6d008ffb4.woff) format("woff"), url(../../static/media/Phosphor-Fill.63a749a01b0be4cb2b3a.ttf) format("truetype"), url(../../static/media/Phosphor-Fill.de17ba44c3dfea1a196e.svg#Phosphor-Fill) format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -35931,7 +35931,7 @@ table {
 
 @font-face {
   font-family: "Phosphor-Light";
-  src: url(/static/media/Phosphor-Light.65f03242495c2651aa35.woff2) format("woff2"), url(/static/media/Phosphor-Light.a8a063e24e7dc70bf9e3.woff) format("woff"), url(/static/media/Phosphor-Light.1795b97de30987c7d01d.ttf) format("truetype"), url(/static/media/Phosphor-Light.674ade712eff4c86659d.svg#Phosphor-Light) format("svg");
+  src: url(../../static/media/Phosphor-Light.65f03242495c2651aa35.woff2) format("woff2"), url(../../static/media/Phosphor-Light.a8a063e24e7dc70bf9e3.woff) format("woff"), url(../../static/media/Phosphor-Light.1795b97de30987c7d01d.ttf) format("truetype"), url(../../static/media/Phosphor-Light.674ade712eff4c86659d.svg#Phosphor-Light) format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -40945,7 +40945,7 @@ table {
 
 @font-face {
   font-family: "Phosphor";
-  src: url(/static/media/Phosphor.73ece22227bb30864343.woff2) format("woff2"), url(/static/media/Phosphor.4ad759d499ef258d0315.woff) format("woff"), url(/static/media/Phosphor.cb35b1f2186a5fa1b392.ttf) format("truetype"), url(/static/media/Phosphor.aa051f2ccb96f231519f.svg#Phosphor) format("svg");
+  src: url(../../static/media/Phosphor.73ece22227bb30864343.woff2) format("woff2"), url(../../static/media/Phosphor.4ad759d499ef258d0315.woff) format("woff"), url(../../static/media/Phosphor.cb35b1f2186a5fa1b392.ttf) format("truetype"), url(../../static/media/Phosphor.aa051f2ccb96f231519f.svg#Phosphor) format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -45959,7 +45959,7 @@ table {
 
 @font-face {
   font-family: "Phosphor-Thin";
-  src: url(/static/media/Phosphor-Thin.f3faed6e3019ef259fd7.woff2) format("woff2"), url(/static/media/Phosphor-Thin.dc995c2632e5b7d5bcd1.woff) format("woff"), url(/static/media/Phosphor-Thin.5c2541d44ee991cdc1b5.ttf) format("truetype"), url(/static/media/Phosphor-Thin.f54c2d8f2820a299b9ac.svg#Phosphor-Thin) format("svg");
+  src: url(../../static/media/Phosphor-Thin.f3faed6e3019ef259fd7.woff2) format("woff2"), url(../../static/media/Phosphor-Thin.dc995c2632e5b7d5bcd1.woff) format("woff"), url(../../static/media/Phosphor-Thin.5c2541d44ee991cdc1b5.ttf) format("truetype"), url(../../static/media/Phosphor-Thin.f54c2d8f2820a299b9ac.svg#Phosphor-Thin) format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -62101,7 +62101,7 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 900;
   font-display: block;
-  src: url(/static/media/fa-solid-900.fb8184add5a3101ad0a3.woff2) format("woff2"), url(/static/media/fa-solid-900.45a265d0f07b31cde85f.ttf) format("truetype");
+  src: url(../../static/media/fa-solid-900.fb8184add5a3101ad0a3.woff2) format("woff2"), url(../../static/media/fa-solid-900.45a265d0f07b31cde85f.ttf) format("truetype");
 }
 .fas,
 .fa-solid {
@@ -62123,7 +62123,7 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 400;
   font-display: block;
-  src: url(/static/media/fa-regular-400.e931bc0d14f5bbb1da22.woff2) format("woff2"), url(/static/media/fa-regular-400.adc51aab4d771ab65f81.ttf) format("truetype");
+  src: url(../../static/media/fa-regular-400.e931bc0d14f5bbb1da22.woff2) format("woff2"), url(../../static/media/fa-regular-400.adc51aab4d771ab65f81.ttf) format("truetype");
 }
 .far,
 .fa-regular {
@@ -62145,7 +62145,7 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 400;
   font-display: block;
-  src: url(/static/media/fa-brands-400.8d3cabfc66809162fb4d.woff2) format("woff2"), url(/static/media/fa-brands-400.6205fd00fb1b573e9f0f.ttf) format("truetype");
+  src: url(../../static/media/fa-brands-400.8d3cabfc66809162fb4d.woff2) format("woff2"), url(../../static/media/fa-brands-400.6205fd00fb1b573e9f0f.ttf) format("truetype");
 }
 .fab,
 .fa-brands {
@@ -65376,7 +65376,7 @@ button.swiper-pagination-bullet {
   .pswp--svg .pswp__button,
   .pswp--svg .pswp__button--arrow--left:before,
   .pswp--svg .pswp__button--arrow--right:before {
-    background-image: url(/static/media/default-skin.f63b59c856b580939ffa.svg);
+    background-image: url(../../static/media/default-skin.f63b59c856b580939ffa.svg);
   }
   .pswp--svg .pswp__button--arrow--left,
   .pswp--svg .pswp__button--arrow--right {
@@ -65794,4 +65794,4 @@ a.pswp__share--download:hover {
 }
 
 
-/*# sourceMappingURL=main.7d6b33f9.css.map*/
+/*# sourceMappingURL=main.1cac5d9f.css.map*/
