@@ -1,0 +1,27 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 179 217" width="179" height="217">
+	<title>Fine_Code_Logo_Template-ai</title>
+	<defs>
+		<linearGradient id="g1" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(160.413,-160.413,125.682,125.682,-69.374,104)">
+			<stop offset=".15" stop-color="#eb008b"/>
+			<stop offset=".5" stop-color="#bc3bb3"/>
+			<stop offset=".85" stop-color="#a61ff4"/>
+		</linearGradient>
+	</defs>
+	<style>
+		tspan { white-space:pre } 
+		.s0 { fill: url(#g1) } 
+		.s1 { fill: #fefefe } 
+	</style>
+	<g id="Logo">
+		<g id="&lt;Group&gt;">
+			<g id="&lt;Group&gt;">
+				<path id="&lt;Path&gt;" class="s0" d="m70.1 23.8c-32.7 0-59.3 26.5-59.3 59.3v101.1h101.2c32.7 0 59.2-26.5 59.2-59.3v-101.1z"/>
+				<g id="&lt;Group&gt;">
+					<path id="&lt;Path&gt;" class="s1" d="m93.8 60.5l-10.5-10.5h61.7l0.1 61.7-10.5-10.5-0.1-40.7z"/>
+					<path id="&lt;Path&gt;" class="s1" d="m47.6 147.5l-0.1-40.7-10.5-10.5 0.1 61.7h61.7l-10.6-10.5z"/>
+					<path id="&lt;Path&gt;" class="s1" d="m64.9 68.3l44.4 79.2 7.8-7.8-44.3-79.2z"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>

@@ -1,0 +1,10 @@
+// Understanding .png importments
+declare module '*.png'
+declare module '*.json'
+declare module '*.mp4'
+declare module '*.jpg'
+declare module '*.jpeg'
+declare module '*.webp'
+declare module '*.sksl'
+declare module '*.ttf'
+declare module '*.pdf'

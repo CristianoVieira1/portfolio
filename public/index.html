@@ -1,18 +1,12 @@
 <!DOCTYPE html>
-<html lang="pt_br">
+<html lang="pt-BR">
   <head>
     <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="author"
-      content="Cristiano Borges - cristianovieirati@gmail.com"
-    />
-    <meta
-      property="og:title"
-      content="Cristiano Borges - Desenvolvedor React Native"
-    />
+    <meta name="author" content="Cristiano Borges - cristianovieirati@gmail.com" />
+    <meta property="og:title" content="Cristiano Borges - Desenvolvedor React Native" />
     <meta
       property="og:description"
       content="Portfólio de Cristiano Borges, desenvolvedor especializado em React Native e tecnologias fullstack."
@@ -26,28 +20,100 @@
       name="keywords"
       content="Cristiano Borges, desenvolvedor, React Native, desenvolvimento mobile, desenvolvimento fullstack, iOS, Android, JavaScript, TypeScript, Node.js, Firebase, Expo, programador, frontend, backend, UX, UI"
     />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.png" sizes="32x32" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.png" sizes="192x192" />
-    <link
-      rel="apple-touch-icon"
-      href="%PUBLIC_URL%/favicon.png"
-      sizes="180x180"
-    />
-    <meta
-      name="msapplication-TileImage"
-      content="%PUBLIC_URL%/favicon.png"
-      sizes="270x270"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon.png" />
+    <!-- <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" /> -->
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+    <script src="%PUBLIC_URL%/assets/js/libs.min.js"></script>
+
+    <script src="%PUBLIC_URL%/assets/js/app.js"></script>
+
+    <script type="text/javascript">
+      ;(function (l) {
+        if (l.search[1] === '/') {
+          var decoded = l.search
+            .slice(1)
+            .split('&')
+            .map(function (s) {
+              return s.replace(/~and~/g, '&')
+            })
+            .join('?')
+          window.history.replaceState(null, null, l.pathname.slice(0, -1) + decoded + l.hash)
+        }
+      })(window.location)
+    </script>
+
     <title>Cristiano Borges - Desenvolvedor React Native</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,500;0,600;1,300;1,700&family=Open+Sans:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    <script>
+      const randomX = random(-400, 400)
+      const randomY = random(-200, 200)
+      const randomDelay = random(0, 50)
+      const randomTime = random(20, 40)
+      const randomTime2 = random(5, 12)
+      const randomAngle = random(-30, 150)
+
+      const blurs = gsap.utils.toArray('.blur')
+      blurs.forEach((blur) => {
+        gsap.set(blur, {
+          x: randomX(-1),
+          y: randomX(1),
+          rotation: randomAngle(-1)
+        })
+
+        moveX(blur, 1)
+        moveY(blur, -1)
+        rotate(blur, 1)
+      })
+
+      function rotate(target, direction) {
+        gsap.to(target, randomTime2(), {
+          rotation: randomAngle(direction),
+          ease: Sine.easeInOut,
+          onComplete: rotate,
+          onCompleteParams: [target, direction * -1]
+        })
+      }
+
+      function moveX(target, direction) {
+        gsap.to(target, randomTime(), {
+          x: randomX(direction),
+          ease: Sine.easeInOut,
+          onComplete: moveX,
+          onCompleteParams: [target, direction * -1]
+        })
+      }
+
+      function moveY(target, direction) {
+        gsap.to(target, randomTime(), {
+          y: randomY(direction),
+          ease: Sine.easeInOut,
+          onComplete: moveY,
+          onCompleteParams: [target, direction * -1]
+        })
+      }
+
+      function random(min, max) {
+        const delta = max - min
+        return (direction = 1) => (min + delta * Math.random()) * direction
+      }
+    </script>
   </body>
 </html>
