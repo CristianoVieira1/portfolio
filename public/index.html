@@ -5,91 +5,149 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta name="author" content="Cristiano Borges - cristianovieirati@gmail.com" />
-    <meta property="og:title" content="Cristiano Borges - Desenvolvedor React Native" />
+    <meta
+      name="author"
+      content="Cristiano Borges - cristianovieirati@gmail.com"
+    />
+    <meta
+      property="og:title"
+      content="Freelancer React Native | Cristiano Borges - Desenvolvimento Mobile e Fullstack"
+    />
     <meta
       property="og:description"
-      content="Portfólio de Cristiano Borges, desenvolvedor especializado em React Native e tecnologias fullstack."
+      content="Sou Cristiano Borges, desenvolvedor freelancer especialista em React Native, apps Android/iOS e soluções fullstack. Veja meu portfólio e entre em contato para seu projeto!"
     />
     <meta property="og:image" content="%PUBLIC_URL%/share.png" />
     <meta
       name="description"
-      content="Portfólio de Cristiano Borges, desenvolvedor especializado em React Native e tecnologias fullstack."
+      content="Sou Cristiano Borges, desenvolvedor freelancer especialista em React Native, apps Android/iOS e soluções fullstack. Veja meu portfólio e entre em contato para seu projeto!"
     />
     <meta
       name="keywords"
-      content="Cristiano Borges, desenvolvedor, React Native, desenvolvimento mobile, desenvolvimento fullstack, iOS, Android, JavaScript, TypeScript, Node.js, Firebase, Expo, programador, frontend, backend, UX, UI"
+      content="freelancer React Native, desenvolvedor de aplicativos, programador mobile, Cristiano Borges, desenvolvimento mobile, fullstack, contratar programador, apps iOS, apps Android, Node.js, Expo, Firebase"
     />
-    <!-- <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" /> -->
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Cristiano Borges - Freelancer React Native"
+    />
+    <meta
+      name="twitter:description"
+      content="Desenvolvedor de apps mobile e soluções fullstack. Veja meu portfólio!"
+    />
+    <meta name="twitter:image" content="%PUBLIC_URL%/share.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
     <script src="%PUBLIC_URL%/assets/js/libs.min.js"></script>
-
     <script src="%PUBLIC_URL%/assets/js/app.js"></script>
-
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Cristiano Borges",
+        "jobTitle": "Desenvolvedor React Native Freelancer",
+        "email": "cristianovieirati@gmail.com",
+        "url": "https://seusite.com",
+        "sameAs": [
+          "https://www.linkedin.com/in/seu-usuario",
+          "https://github.com/seu-usuario"
+        ]
+      }
+    </script>
     <script type="text/javascript">
-      ;(function (l) {
-        if (l.search[1] === '/') {
+      (function (l) {
+        if (l.search[1] === "/") {
           var decoded = l.search
             .slice(1)
-            .split('&')
+            .split("&")
             .map(function (s) {
-              return s.replace(/~and~/g, '&')
+              return s.replace(/~and~/g, "&");
             })
-            .join('?')
-          window.history.replaceState(null, null, l.pathname.slice(0, -1) + decoded + l.hash)
+            .join("?");
+          window.history.replaceState(
+            null,
+            null,
+            l.pathname.slice(0, -1) + decoded + l.hash
+          );
         }
-      })(window.location)
+      })(window.location);
     </script>
-
-    <title>Cristiano Borges - Desenvolvedor React Native</title>
+    <title>
+      Freelancer React Native | Cristiano Borges - Desenvolvimento Mobile e
+      Fullstack
+    </title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <noscript
+      >Você precisa habilitar o JavaScript para rodar este app.</noscript
+    >
+    <div id="root">
+      <section>
+        <h1>Cristiano Borges - Desenvolvedor Freelancer React Native</h1>
+        <p>
+          Especialista em desenvolvimento de aplicativos móveis (iOS/Android),
+          React Native e soluções fullstack. Contrate para seu projeto!
+        </p>
+        <a href="mailto:cristianovieirati@gmail.com"
+          >Entre em contato por e-mail</a
+        >
+      </section>
+      <footer>
+        <p>Me encontre também:</p>
+        <a
+          href="https://www.linkedin.com/in/seu-usuario"
+          target="_blank"
+          rel="noopener noreferrer"
+          >LinkedIn</a
+        >
+        |
+        <a
+          href="https://github.com/seu-usuario"
+          target="_blank"
+          rel="noopener noreferrer"
+          >GitHub</a
+        >
+        |
+        <a
+          href="https://wa.me/SEUNUMERO"
+          target="_blank"
+          rel="noopener noreferrer"
+          >WhatsApp</a
+        >
+      </footer>
+    </div>
     <script>
-      const randomX = random(-400, 400)
-      const randomY = random(-200, 200)
-      const randomDelay = random(0, 50)
-      const randomTime = random(20, 40)
-      const randomTime2 = random(5, 12)
-      const randomAngle = random(-30, 150)
+      const randomX = random(-400, 400);
+      const randomY = random(-200, 200);
+      const randomDelay = random(0, 50);
+      const randomTime = random(20, 40);
+      const randomTime2 = random(5, 12);
+      const randomAngle = random(-30, 150);
 
-      const blurs = gsap.utils.toArray('.blur')
+      const blurs = gsap.utils.toArray(".blur");
       blurs.forEach((blur) => {
         gsap.set(blur, {
           x: randomX(-1),
           y: randomX(1),
-          rotation: randomAngle(-1)
-        })
+          rotation: randomAngle(-1),
+        });
 
-        moveX(blur, 1)
-        moveY(blur, -1)
-        rotate(blur, 1)
-      })
+        moveX(blur, 1);
+        moveY(blur, -1);
+        rotate(blur, 1);
+      });
 
       function rotate(target, direction) {
         gsap.to(target, randomTime2(), {
           rotation: randomAngle(direction),
           ease: Sine.easeInOut,
           onComplete: rotate,
-          onCompleteParams: [target, direction * -1]
-        })
+          onCompleteParams: [target, direction * -1],
+        });
       }
 
       function moveX(target, direction) {
@@ -97,8 +155,8 @@
           x: randomX(direction),
           ease: Sine.easeInOut,
           onComplete: moveX,
-          onCompleteParams: [target, direction * -1]
-        })
+          onCompleteParams: [target, direction * -1],
+        });
       }
 
       function moveY(target, direction) {
@@ -106,13 +164,13 @@
           y: randomY(direction),
           ease: Sine.easeInOut,
           onComplete: moveY,
-          onCompleteParams: [target, direction * -1]
-        })
+          onCompleteParams: [target, direction * -1],
+        });
       }
 
       function random(min, max) {
-        const delta = max - min
-        return (direction = 1) => (min + delta * Math.random()) * direction
+        const delta = max - min;
+        return (direction = 1) => (min + delta * Math.random()) * direction;
       }
     </script>
   </body>

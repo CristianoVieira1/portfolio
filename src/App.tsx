@@ -1,20 +1,30 @@
-import { useEffect, useState } from 'react'
-import { ThemeProvider } from 'styled-components'
-import { Routes } from './routes'
-import GlobalStyles from './theme'
-import theme from './theme/theme'
+import { useEffect, useState } from "react";
+
+import { Toaster } from "react-hot-toast";
+import { ThemeProvider } from "styled-components";
+import { Routes } from "./routes";
+import GlobalStyles from "./theme";
+
+import theme from "./theme/theme";
 
 function App() {
-  const [isLoading, setIsLoading] = useState(true)
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     setTimeout(() => {
-      setIsLoading(false)
-    }, 1500)
-  }, [])
+      setIsLoading(false);
+    }, 1500);
+  }, []);
 
   return (
-    <>
+    <ThemeProvider theme={theme}>
+      {!isLoading && (
+        <>
+          <Routes />
+          <GlobalStyles />
+          <Toaster position="top-right" />
+        </>
+      )}
       {isLoading && (
         <div id="loader" className="loader">
           <div id="loaderContent" className="loader__content">
@@ -23,13 +33,8 @@ function App() {
           </div>
         </div>
       )}
-
-      <ThemeProvider theme={theme}>
-        <Routes />
-        <GlobalStyles />
-      </ThemeProvider>
-    </>
-  )
+    </ThemeProvider>
+  );
 }
 
-export default App
+export default App;

@@ -1,13 +1,46 @@
+import { FormEvent, useRef } from "react";
+import toast from "react-hot-toast";
+
 const Contact = () => {
+  const formRef = useRef<HTMLFormElement | null>(null);
+
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    if (!formRef.current) return;
+
+    const formData = new FormData(formRef.current);
+
+    try {
+      const response = await fetch(
+        "https://formsubmit.co/cristianovieirati@gmail.com",
+        {
+          method: "POST",
+          body: formData,
+          headers: {
+            Accept: "application/json",
+          },
+        }
+      );
+
+      if (response.ok) {
+        toast.success("Mensagem enviada com sucesso! Obrigado pelo contato.");
+        formRef.current.reset();
+      } else {
+        toast.error("Ocorreu um erro ao enviar. Tente novamente.");
+      }
+    } catch (error) {
+      toast.error("Ocorreu um erro ao enviar. Tente novamente.");
+    }
+  };
+
   return (
     <>
       <section id="contact" className="inner contact">
         <div className="content__block section-title">
-          <p className="h2__subtitle  animate-in-up">
+          <p className="h2__subtitle animate-in-up">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              x="0px"
-              y="0px"
               width="13px"
               height="13px"
               viewBox="0 0 13 13"
@@ -22,40 +55,71 @@ const Contact = () => {
             </svg>
             <span>Contato</span>
           </p>
-          <h2 className="h2__title  animate-in-up">Vamos fazer algo incrível juntos!</h2>
+          <h2 className="h2__title animate-in-up">
+            Vamos criar seu app juntos? Fale comigo!
+          </h2>
         </div>
 
         <div className="content__block grid-block block-grid-large">
           <div className="form-container">
-            <div className="form__reply centered text-center">
-              <i className="ph-bold ph-smiley reply__icon"></i>
-              <p className="reply__title">Done!</p>
-              <span className="reply__text">Thanks for your message. Il get back as soon as possible.</span>
-            </div>
-
-            <form className="form contact-form" id="contact-form">
-              <input type="hidden" name="project_name" value="Starter Template" />
-              <input type="hidden" name="form_subject" value="Contact Form Message" />
+            <form
+              className="form contact-form"
+              id="contact-form"
+              ref={formRef}
+              onSubmit={handleSubmit}
+            >
+              <input
+                type="hidden"
+                name="_subject"
+                value="Novo contato pelo portfólio"
+              />
+              <input type="hidden" name="_captcha" value="false" />
               <div className="container-fluid p-0">
                 <div className="row gx-0 p-3">
                   <div className="col-12 col-md-6 form__item animate-in-up">
-                    <input type="text" name="Name" placeholder="Nome*" required />
+                    <input
+                      type="text"
+                      name="Nome"
+                      placeholder="Seu nome*"
+                      required
+                    />
                   </div>
                   <div className="col-12 col-md-6 form__item animate-in-up">
-                    <input type="text" name="Company" placeholder="Empresa" />
+                    <input
+                      type="text"
+                      name="Empresa"
+                      placeholder="Empresa (opcional)"
+                    />
                   </div>
                   <div className="col-12 col-md-6 form__item animate-in-up">
-                    <input type="email" name="E-mail" placeholder="Email*" required />
+                    <input
+                      type="email"
+                      name="Email"
+                      placeholder="Seu email*"
+                      required
+                    />
                   </div>
                   <div className="col-12 col-md-6 form__item animate-in-up">
-                    <input type="tel" name="Phone" placeholder="Telefone*" required />
+                    <input
+                      type="tel"
+                      name="Telefone"
+                      placeholder="Seu telefone*"
+                      required
+                    />
                   </div>
                   <div className="col-12 form__item animate-in-up">
-                    <textarea name="Message" placeholder="Mensagem*" required></textarea>
+                    <textarea
+                      name="Mensagem"
+                      placeholder="Descreva seu projeto ou dúvida*"
+                      required
+                    ></textarea>
                   </div>
                   <div className="col-12 form__item animate-in-up">
-                    <button className="btn btn-default btn-hover btn-hover-accent" type="submit">
-                      <span className="btn-caption">Enviar</span>
+                    <button
+                      className="btn btn-default btn-hover btn-hover-accent"
+                      type="submit"
+                    >
+                      <span className="btn-caption">Enviar mensagem</span>
                       <i className="ph-bold ph-paper-plane-tilt"></i>
                     </button>
                   </div>
@@ -75,10 +139,10 @@ const Contact = () => {
                   href="https://github.com/CristianoVieira1"
                   target="_blank"
                   rel="noreferrer"
+                  aria-label="GitHub"
                 ></a>
               </div>
             </div>
-
             <div className="socials-cards__item d-flex grid-item-s animate-card-5">
               <div className="socials-cards__card">
                 <i className="ph-bold ph-linkedin-logo"></i>
@@ -87,6 +151,19 @@ const Contact = () => {
                   href="https://www.linkedin.com/in/cristianobv/"
                   target="_blank"
                   rel="noreferrer"
+                  aria-label="LinkedIn"
+                ></a>
+              </div>
+            </div>
+            <div className="socials-cards__item d-flex grid-item-s animate-card-5">
+              <div className="socials-cards__card">
+                <i className="ph-bold ph-whatsapp-logo"></i>
+                <a
+                  className="socials-cards__link"
+                  href="https://wa.me/5551998884446"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="WhatsApp"
                 ></a>
               </div>
             </div>
@@ -96,9 +173,12 @@ const Contact = () => {
         <div className="content__block">
           <div className="teaser">
             <p className="teaser__text animate-in-up">
-              Quer saber mais sobre mim, contar-me sobre o seu projeto. <br />
-              <a className="text-link-bold" href="mailto:example@example.com?subject=Message%20from%20your%20site">
-                Envie um email e retornarei o mais rápido possível.
+              Prefere falar direto? <br />
+              <a
+                className="text-link-bold"
+                href="mailto:cristianovieirati@gmail.com?subject=Contato%20via%20portfólio"
+              >
+                Envie um e-mail e vamos conversar sobre seu projeto!
               </a>
             </p>
           </div>
@@ -108,7 +188,9 @@ const Contact = () => {
           <div className="container-fluid p-0 contact-lines animate-in-up">
             <div className="row g-0 contact-lines__item">
               <div className="col-12 col-md-4 contact-lines__data">
-                <p className="contact-lines__title animate-in-up">Localização</p>
+                <p className="contact-lines__title animate-in-up">
+                  Localização
+                </p>
                 <p className="contact-lines__text animate-in-up">
                   <a
                     className="text-link-bold"
@@ -120,22 +202,20 @@ const Contact = () => {
                   </a>
                 </p>
               </div>
-
               <div className="col-12 col-md-4 contact-lines__data">
-                <p className="contact-lines__title animate-in-up">Phone</p>
+                <p className="contact-lines__title animate-in-up">Telefone</p>
                 <p className="contact-lines__text animate-in-up">
                   <a className="text-link-bold" href="tel:+51998884446">
                     (51) 99888-4446
                   </a>
                 </p>
               </div>
-
               <div className="col-12 col-md-4 contact-lines__data">
                 <p className="contact-lines__title animate-in-up">Email</p>
                 <p className="contact-lines__text animate-in-up">
                   <a
                     className="text-link-bold"
-                    href="mailto:cristianovieirati@gmail.com?subject=Message%20from%20portfolio%20site"
+                    href="mailto:cristianovieirati@gmail.com?subject=Contato%20via%20portfólio"
                   >
                     cristianovieirati@gmail.com
                   </a>
@@ -146,7 +226,7 @@ const Contact = () => {
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

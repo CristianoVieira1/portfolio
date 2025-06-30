@@ -1,7 +1,7 @@
-import CV from '../../assets/pdf/CristianoBorges.pdf'
-import WorkExperience from '../../components/WorkHistory'
-import workHistory, { WorkHistoryItem } from '../../database/workHistory'
-import * as S from './styles'
+import CV from "../../assets/pdf/CristianoBorges.pdf";
+import WorkExperience from "../../components/WorkHistory";
+import workHistory, { WorkHistoryItem } from "../../database/workHistory";
+import * as S from "./styles";
 
 const About = () => {
   return (
@@ -27,14 +27,16 @@ const About = () => {
             </svg>
             <span>Sobre mim</span>
           </p>
-          <h2 className="h2__title animate-in-up">Transformando problemas complexos em design simples</h2>
+          <h2 className="h2__title animate-in-up">
+            Soluções mobile que conectam pessoas e negócios
+          </h2>
         </div>
 
         <div className="content__block grid-block">
           <div className="achievements d-flex flex-column flex-md-row align-items-md-stretch">
             <div className="achievements__item d-flex flex-column grid-item animate-card-3">
               <div className="achievements__card">
-                <p className="achievements__number">+4</p>
+                <p className="achievements__number">+5</p>
                 <p className="achievements__descr">Anos de experiência</p>
               </div>
             </div>
@@ -43,20 +45,22 @@ const About = () => {
 
         <div className="content__block grid-block block-large">
           <div className="container-fluid p-1">
-            <S.Content className=" g-0 justify-content-between">
+            <S.Content className="g-0 justify-content-between">
               <div className="col-12 col-xl-8 grid-item about-descr">
                 <p className="about-descr__text animate-in-up">
-                  Sou desenvolvedor frontend com especialização em React Native e ReactJs. Eu sou apaixonado por
-                  programação desde sempre, e tenho trabalhado na área há mais de 4 anos. Durante minha carreira, tenho
-                  me concentrado em garantir a organização, pontualidade e dedicação no meu trabalho. Acredito que esses
-                  são fatores essenciais para um desenvolvedor front-end de sucesso, especialmente em projetos que
-                  envolvem prazos apertados e muitas demandas diferentes.
+                  Sou desenvolvedor especializado em{" "}
+                  <strong>React Native</strong>, criando aplicativos móveis para{" "}
+                  <strong>Android</strong> e <strong>iOS</strong> há mais de 5
+                  anos. Minha paixão é transformar ideias em apps funcionais,
+                  intuitivos e de alta performance.
                 </p>
                 <p className="about-descr__text animate-in-up">
-                  Além disso, também valorizo a importância de trabalhar em equipe, colaborando com colegas de forma
-                  eficiente e eficaz. Estou sempre procurando maneiras de me desenvolver como profissional e como
-                  pessoa, e acredito que essas atividades pessoais me ajudam a manter a mente clara e focada, além de me
-                  tornar uma pessoa mais equilibrada.
+                  Ao longo da minha carreira, trabalhei em projetos para
+                  startups e empresas de diferentes segmentos, sempre prezando
+                  pela qualidade do código, organização, pontualidade e boa
+                  comunicação com o time. Acredito que tecnologia é sobre
+                  pessoas, por isso busco sempre entregar soluções que realmente
+                  fazem a diferença para o usuário final.
                 </p>
                 <div className="btn-group about-descr__btnholder animate-in-up">
                   <a
@@ -80,7 +84,7 @@ const About = () => {
                 <div className="about-info__item animate-in-up">
                   <h6>
                     <small className="top">Telefone</small>
-                    <a className="text-link-bold" href="tel:+12127089400">
+                    <a className="text-link-bold" href="tel:+5551998884446">
                       51 99888-4446
                     </a>
                   </h6>
@@ -90,7 +94,7 @@ const About = () => {
                     <small className="top">Email</small>
                     <a
                       className="text-link-bold"
-                      href="mailto:cristianovieirati@gmail.com?subject=Message%20from%20your%20site"
+                      href="mailto:cristianovieirati@gmail.com?subject=Contato%20via%20site"
                     >
                       cristianovieirati@gmail.com
                     </a>
@@ -135,7 +139,7 @@ const About = () => {
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default About
+export default About;

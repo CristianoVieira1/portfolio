@@ -1,10 +1,10 @@
-import CV from '../../assets/pdf/CristianoBorges.pdf'
-import Avatar from '../../components/Avatar'
-import Header from '../../components/Header'
-import About from '../About'
-import Contact from '../Contact'
-import Portfolio from '../Portfolio'
-import Resume from '../Resume'
+import CV from "../../assets/pdf/CristianoBorges.pdf";
+import Avatar from "../../components/Avatar";
+import Header from "../../components/Header";
+import About from "../About";
+import Contact from "../Contact";
+import Portfolio from "../Portfolio";
+import Resume from "../Resume";
 
 export const Home = () => {
   return (
@@ -21,7 +21,11 @@ export const Home = () => {
       <div id="content" className="content">
         <div className="content__wrapper">
           <section id="home" className="main intro">
-            <div id="headline" className="headline d-flex align-items-start flex-column" data-speed="1">
+            <div
+              id="headline"
+              className="headline d-flex align-items-start flex-column"
+              data-speed="1"
+            >
               <p className="headline__subtitle animate-headline">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -39,19 +43,29 @@ export const Home = () => {
                   C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"
                   />
                 </svg>
-                <span>Quem sou eu!</span>
+                <span>Especialista em React Native</span>
               </p>
               <h1 className="headline__title animate-headline">
                 Cristiano Borges
                 <br />
-                React Native e front end developer
+                Desenvolvedor React Native
               </h1>
+              <p className="headline__description animate-headline">
+                Sou desenvolvedor <strong>React Native</strong> com ampla
+                experiência em criação de aplicativos móveis para{" "}
+                <strong>Android</strong> e <strong>iOS</strong>.
+                <br />
+                <strong>
+                  Precisa de um app mobile de verdade? Vamos conversar e
+                  transformar sua ideia em realidade!
+                </strong>
+              </p>
               <div className="headline__btnholder d-flex flex-column flex-sm-row">
                 <a
                   className="btn mobile-vertical btn-default btn-hover btn-hover-accent-mobile animate-headline"
                   href="#portfolio"
                 >
-                  <span className="btn-caption">Meus trabalhos</span>
+                  <span className="btn-caption">Ver projetos</span>
                   <i className="ph-bold ph-squares-four"></i>
                 </a>
                 <a
@@ -59,7 +73,7 @@ export const Home = () => {
                   href={CV}
                   download="Cristiano Borges"
                 >
-                  <span className="btn-caption">Download CV</span>
+                  <span className="btn-caption">Baixar CV</span>
                   <i className="ph-bold ph-download-simple"></i>
                 </a>
               </div>
@@ -84,7 +98,9 @@ export const Home = () => {
                   <g>
                     <use xlinkHref="#textPath" fill="none"></use>
                     <text>
-                      <textPath xlinkHref="#textPath">Role para ver mais * Role para ver mais * </textPath>
+                      <textPath xlinkHref="#textPath">
+                        Role para ver mais * Role para ver mais *{" "}
+                      </textPath>
                     </text>
                   </g>
                 </svg>
@@ -92,20 +108,20 @@ export const Home = () => {
               </a>
             </div>
           </section>
-          {/* port */}
+
+          {/* Portfólio */}
           <Portfolio />
 
-          {/* about  */}
+          {/* Sobre */}
           <About />
 
-          {/* resume  */}
+          {/* Currículo */}
           <Resume />
 
-          {/* contact  */}
-
+          {/* Contato */}
           <Contact />
         </div>
       </div>
     </>
-  )
-}
+  );
+};

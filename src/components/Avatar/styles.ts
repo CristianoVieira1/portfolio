@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const Container = styled.div`
   position: relative;
@@ -43,7 +43,7 @@ export const Container = styled.div`
   @media only screen and (min-width: 1600px) {
     left: 10rem;
   }
-`
+`;
 
 export const Avatar = styled.section`
   position: relative;
@@ -54,7 +54,7 @@ export const Avatar = styled.section`
   flex-direction: column;
   justify-content: space-between;
   &&::before {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     top: 0;
@@ -71,7 +71,7 @@ export const Avatar = styled.section`
       padding: 5rem;
     }
   }
-`
+`;
 
 export const AvatarBlock = styled.div`
   position: relative;
@@ -94,7 +94,7 @@ export const AvatarBlock = styled.div`
       margin-bottom: 0;
     }
   }
-`
+`;
 
 export const AvatarLogo = styled.div`
   display: flex;
@@ -103,7 +103,7 @@ export const AvatarLogo = styled.div`
   @media only screen and (min-width: 1400px) {
     margin-bottom: 2rem;
   }
-`
+`;
 
 export const LogoImage = styled.div`
   width: 60px;
@@ -116,13 +116,13 @@ export const LogoImage = styled.div`
     width: 75px;
     height: 75px;
   }
-`
+`;
 export const AvatarImage = styled.div`
   overflow: hidden;
   -moz-border-radius: 3rem;
   border-radius: 3rem;
   margin-bottom: 0.8rem;
-`
+`;
 export const LogoCaption = styled.div`
   padding-left: 2rem;
   p {
@@ -134,17 +134,17 @@ export const LogoCaption = styled.div`
   }
   @media only screen and (min-width: 1400px) {
     p {
-      font-size: 3.6rem;
+      font-size: 2.6rem;
     }
   }
-`
+`;
 export const AvatarSociais = styled.div`
-  margin-bottom: 1rem;
-`
+  margin: 1rem 0;
+`;
 
 export const AvatarSquare = styled.ul`
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
-`
+`;
