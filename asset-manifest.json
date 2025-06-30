@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.3ba4475c.css",
-    "main.js": "/portfolio/static/js/main.4b866a15.js",
+    "main.js": "/portfolio/static/js/main.8f06b445.js",
     "static/js/787.7da95b79.chunk.js": "/portfolio/static/js/787.7da95b79.chunk.js",
     "static/media/vibra.png": "/portfolio/static/media/vibra.4b043abc2d326d80871b.png",
     "static/media/Phosphor-Duotone.svg": "/portfolio/static/media/Phosphor-Duotone.9eaa7d4d6bb860014b76.svg",
@@ -9,8 +9,8 @@
     "static/media/Phosphor-Thin.svg": "/portfolio/static/media/Phosphor-Thin.f54c2d8f2820a299b9ac.svg",
     "static/media/Phosphor.svg": "/portfolio/static/media/Phosphor.aa051f2ccb96f231519f.svg",
     "static/media/Phosphor-Bold.svg": "/portfolio/static/media/Phosphor-Bold.9bea847ee46ccee8f958.svg",
-    "static/media/avatar.png": "/portfolio/static/media/avatar.a23e63888bd795bb573a.png",
     "static/media/Phosphor-Fill.svg": "/portfolio/static/media/Phosphor-Fill.de17ba44c3dfea1a196e.svg",
+    "static/media/avatar2.png": "/portfolio/static/media/avatar2.1191b3af24e6faec4a2e.png",
     "static/media/colomboTeste.png": "/portfolio/static/media/colomboTeste.6430a3180e44bfd9c2a0.png",
     "static/media/Phosphor-Duotone.woff": "/portfolio/static/media/Phosphor-Duotone.d9166b70504d269b32b9.woff",
     "static/media/Phosphor-Duotone.ttf": "/portfolio/static/media/Phosphor-Duotone.15861c32578891823ba7.ttf",
@@ -47,17 +47,17 @@
     "static/media/fa-regular-400.woff2": "/portfolio/static/media/fa-regular-400.e931bc0d14f5bbb1da22.woff2",
     "static/media/Xcode.svg": "/portfolio/static/media/Xcode.b31073315b4f7b90614ba696ddc34957.svg",
     "static/media/vscode.svg": "/portfolio/static/media/vscode.5cc4bd71441239c888ded948e8c88803.svg",
-    "static/media/default-skin.svg": "/portfolio/static/media/default-skin.f63b59c856b580939ffa.svg",
     "index.html": "/portfolio/index.html",
+    "static/media/default-skin.svg": "/portfolio/static/media/default-skin.f63b59c856b580939ffa.svg",
     "static/media/android-studio.svg": "/portfolio/static/media/android-studio.8f9a456f43e29e050e89378de0105da9.svg",
     "static/media/logo.svg": "/portfolio/static/media/logo.f463f1bcb476113aac36229edb539a01.svg",
     "static/media/icon-figma.svg": "/portfolio/static/media/icon-figma.c89ffe04fbb86a3f3a32da1dfdcc0c2d.svg",
     "main.3ba4475c.css.map": "/portfolio/static/css/main.3ba4475c.css.map",
-    "main.4b866a15.js.map": "/portfolio/static/js/main.4b866a15.js.map",
+    "main.8f06b445.js.map": "/portfolio/static/js/main.8f06b445.js.map",
     "787.7da95b79.chunk.js.map": "/portfolio/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3ba4475c.css",
-    "static/js/main.4b866a15.js"
+    "static/js/main.8f06b445.js"
   ]
 }
