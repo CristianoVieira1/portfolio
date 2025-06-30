@@ -55,14 +55,16 @@ const Avatar = () => {
               </li>
             </S.AvatarSquare>
           </S.AvatarSociais>
-          <div className="avatar__btnholder">
-            <a
-              className="btn btn-default btn-fullwidth btn-hover btn-hover-accent"
-              href="#contact"
-            >
-              <span className="btn-caption">Vamos criar seu app juntos!</span>
-            </a>
-          </div>
+          <S.ButtonArea>
+            <div className="avatar__btnholder">
+              <a
+                className="btn btn-default btn-fullwidth btn-hover btn-hover-accent"
+                href="#contact"
+              >
+                <span className="btn-caption">Vamos criar seu app juntos!</span>
+              </a>
+            </div>
+          </S.ButtonArea>
         </S.AvatarBlock>
       </S.Avatar>
     </S.Container>

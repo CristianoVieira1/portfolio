@@ -106,23 +106,48 @@ export const AvatarLogo = styled.div`
 `;
 
 export const LogoImage = styled.div`
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   svg {
     width: 100%;
     height: auto;
   }
   @media only screen and (min-width: 1400px) {
-    width: 75px;
-    height: 75px;
+    width: 50px;
+    height: 50px;
   }
 `;
 export const AvatarImage = styled.div`
   overflow: hidden;
-  -moz-border-radius: 3rem;
   border-radius: 3rem;
   margin-bottom: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 2rem;
+    transition: max-width 0.3s;
+  }
+
+  @media (min-width: 768px) {
+    img {
+      max-width: 220px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    img {
+      max-width: 260px;
+    }
+  }
 `;
+
 export const LogoCaption = styled.div`
   padding-left: 2rem;
   p {
@@ -147,4 +172,8 @@ export const AvatarSquare = styled.ul`
   justify-content: center;
   align-items: center;
   gap: 20px;
+`;
+
+export const ButtonArea = styled.div`
+  margin: 2rem 0;
 `;
