@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.3ba4475c.css",
-    "main.js": "/portfolio/static/js/main.79e5f1a0.js",
+    "main.js": "/portfolio/static/js/main.0fce76ee.js",
     "static/js/787.7da95b79.chunk.js": "/portfolio/static/js/787.7da95b79.chunk.js",
     "static/media/vibra.png": "/portfolio/static/media/vibra.4b043abc2d326d80871b.png",
     "static/media/Phosphor-Duotone.svg": "/portfolio/static/media/Phosphor-Duotone.9eaa7d4d6bb860014b76.svg",
@@ -41,7 +41,7 @@
     "static/media/Phosphor-Fill.woff2": "/portfolio/static/media/Phosphor-Fill.637b7acbfd4959788cea.woff2",
     "static/media/house.png": "/portfolio/static/media/house.e88596aaa76a94617758.png",
     "static/media/fa-regular-400.ttf": "/portfolio/static/media/fa-regular-400.adc51aab4d771ab65f81.ttf",
-    "static/media/CristianoBorges.pdf": "/portfolio/static/media/CristianoBorges.f3cdd6bfd6f837dec1c0.pdf",
+    "static/media/CristianoBorges.pdf": "/portfolio/static/media/CristianoBorges.60451ee4885cef0b7af1.pdf",
     "static/media/teste.webp": "/portfolio/static/media/teste.4f71de327b7165787988.webp",
     "static/media/siga.png": "/portfolio/static/media/siga.878c64d53d739c203a4a.png",
     "static/media/fa-regular-400.woff2": "/portfolio/static/media/fa-regular-400.e931bc0d14f5bbb1da22.woff2",
@@ -53,11 +53,11 @@
     "static/media/logo.svg": "/portfolio/static/media/logo.f463f1bcb476113aac36229edb539a01.svg",
     "static/media/icon-figma.svg": "/portfolio/static/media/icon-figma.c89ffe04fbb86a3f3a32da1dfdcc0c2d.svg",
     "main.3ba4475c.css.map": "/portfolio/static/css/main.3ba4475c.css.map",
-    "main.79e5f1a0.js.map": "/portfolio/static/js/main.79e5f1a0.js.map",
+    "main.0fce76ee.js.map": "/portfolio/static/js/main.0fce76ee.js.map",
     "787.7da95b79.chunk.js.map": "/portfolio/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3ba4475c.css",
-    "static/js/main.79e5f1a0.js"
+    "static/js/main.0fce76ee.js"
   ]
 }
