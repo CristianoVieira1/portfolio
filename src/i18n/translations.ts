@@ -210,6 +210,14 @@ export const translations = {
       pt: "| Todos os direitos reservados",
       en: "| All rights reserved",
     },
+    terms: {
+      pt: "Termos de Uso",
+      en: "Terms of Use",
+    },
+    privacy: {
+      pt: "Política de Privacidade",
+      en: "Privacy Policy",
+    },
   },
 
   // Sidebar

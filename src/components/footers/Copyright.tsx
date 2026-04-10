@@ -24,22 +24,10 @@ export default function Copyright() {
               </p>{" "}
               <ul className="tmp-link-animation dark-content">
                 <li>
-                  <a href="#">{t.terms[lang]}</a>
-                </li>
-                <li>
-                  <a href="#">{t.privacy[lang]}</a>
-                </li>
-                <li>
                   <a href="#contacts">{translations.nav.contact[lang]}</a>
                 </li>
               </ul>
               <ul className="tmp-link-animation light-content">
-                <li>
-                  <a href="#">{t.terms[lang]}</a>
-                </li>
-                <li>
-                  <a href="#">{t.privacy[lang]}</a>
-                </li>
                 <li>
                   <a href="#contacts">{translations.nav.contact[lang]}</a>
                 </li>
