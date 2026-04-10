@@ -1,6 +1,7 @@
-import { useModalUI } from "@/context/ModalUIContext";
 import { useLanguage } from "@/context/LanguageContext";
+import { useModalUI } from "@/context/ModalUIContext";
 import { translations } from "@/i18n/translations";
+import NeonLogo from "../common/NeonLogo";
 
 export default function Sidebar() {
   const { openModals, closeModal } = useModalUI();
@@ -16,11 +17,13 @@ export default function Sidebar() {
         <div className="inner">
           <div className="top-area">
             <a href="index.html" className="logo">
-              <img loading="lazy" className="logo-dark" alt="Cristiano Borges" src="/portfolio/assets/images/logo/white-logo-reeni.png" width={121} height={41} />
-              <img loading="lazy" className="logo-white" alt="Cristiano Borges" src="/portfolio/assets/images/logo/logo-white.png" width={121} height={40} />
+              <NeonLogo size="sm" className="neon-header-logo" />
             </a>
             <div className="close-icon-area">
-              <button className="tmp-round-action-btn close_side_menu_active" onClick={() => closeModal("sidebar")}>
+              <button
+                className="tmp-round-action-btn close_side_menu_active"
+                onClick={() => closeModal("sidebar")}
+              >
                 <i className="fa-sharp fa-light fa-xmark" />
               </button>
             </div>
@@ -28,7 +31,13 @@ export default function Sidebar() {
           <div className="content-wrapper">
             <div className="image-area-feature">
               <a href="index.html">
-                <img loading="lazy" alt="personal-logo" src="/portfolio/assets/images/logo/man.png" width={340} height={196} />
+                <img
+                  loading="lazy"
+                  alt="personal-logo"
+                  src="/portfolio/share.png"
+                  width={340}
+                  height={196}
+                />
               </a>
             </div>
             <h5 className="title mt--30">{t.title[lang]}</h5>
@@ -38,14 +47,21 @@ export default function Sidebar() {
                 <i className="fa-solid fa-phone" />
                 <div className="information tmp-link-animation">
                   <span>{ft.whatsapp[lang]}</span>
-                  <a href="https://wa.me/5551998884446" className="number">+55 51 99888-4446</a>
+                  <a href="https://wa.me/5551998884446" className="number">
+                    +55 51 99888-4446
+                  </a>
                 </div>
               </div>
               <div className="single-contact">
                 <i className="fa-solid fa-envelope" />
                 <div className="information tmp-link-animation">
                   <span>{ft.emailLabel[lang]}</span>
-                  <a href="mailto:cristianovieirati@gmail.com" className="number">cristianovieirati@gmail.com</a>
+                  <a
+                    href="mailto:cristianovieirati@gmail.com"
+                    className="number"
+                  >
+                    cristianovieirati@gmail.com
+                  </a>
                 </div>
               </div>
               <div className="single-contact">
@@ -59,13 +75,25 @@ export default function Sidebar() {
             <div className="social-wrapper mt--20">
               <span className="subtitle">{ft.findMe[lang]}</span>
               <div className="social-link">
-                <a href="https://www.linkedin.com/in/cristianobv" target="_blank" rel="noreferrer">
+                <a
+                  href="https://www.linkedin.com/in/cristianobv"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <i className="fa-brands fa-linkedin-in" />
                 </a>
-                <a href="https://github.com/CristianoVieira1" target="_blank" rel="noreferrer">
+                <a
+                  href="https://github.com/CristianoVieira1"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <i className="fa-brands fa-github" />
                 </a>
-                <a href="https://wa.me/5551998884446" target="_blank" rel="noreferrer">
+                <a
+                  href="https://wa.me/5551998884446"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <i className="fa-brands fa-whatsapp" />
                 </a>
                 <a href="mailto:cristianovieirati@gmail.com">
@@ -76,7 +104,11 @@ export default function Sidebar() {
           </div>
         </div>
       </div>
-      <a className="overlay_close_side_menu close_side_menu_active" onClick={() => closeModal("sidebar")} href="#" />
+      <a
+        className="overlay_close_side_menu close_side_menu_active"
+        onClick={() => closeModal("sidebar")}
+        href="#"
+      />
     </div>
   );
 }

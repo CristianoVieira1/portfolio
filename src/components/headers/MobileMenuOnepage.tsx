@@ -1,6 +1,6 @@
+import { useModalUI } from "@/context/ModalUIContext";
 import { useEffect, useRef } from "react";
 import OnepageNavMobile from "./OnepageNavMobile";
-import { useModalUI } from "@/context/ModalUIContext";
 
 export default function MobileMenuOnepage() {
   const menuRef = useRef<HTMLDivElement>(null);

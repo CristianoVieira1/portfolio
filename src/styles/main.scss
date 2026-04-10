@@ -36,6 +36,14 @@
   }
 }
 
+.shift-left {
+  margin-left: -30px;
+
+  @media (max-width: 768px) {
+    margin-left: -10px;
+  }
+}
+
 .text-para-doc-wrap .text-para-documents.text-para-documents--gray-white {
   background-image: linear-gradient(90deg, #8f939b 0%, #ffffff 100%) !important;
   background-clip: text !important;

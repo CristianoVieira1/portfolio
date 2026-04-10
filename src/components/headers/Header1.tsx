@@ -1,11 +1,11 @@
-import Nav1 from "./Nav1";
 import NeonLogo from "../common/NeonLogo";
+import Nav1 from "./Nav1";
 
 import { Link } from "react-router-dom";
 
+import { useLanguage } from "@/context/LanguageContext";
 import { useModalUI } from "@/context/ModalUIContext";
 import { useEffect, useState } from "react";
-import { useLanguage } from "@/context/LanguageContext";
 
 export default function Header1() {
   const { openModal } = useModalUI();
@@ -43,13 +43,13 @@ export default function Header1() {
             <div className="header-content">
               <div className="logo">
                 <Link to={`/`}>
-                  <NeonLogo size="sm" className="neon-header-logo" />
+                  <NeonLogo size="md" className="neon-header-logo" />
                 </Link>
               </div>
               <nav className="tmp-mainmenu-nav d-none d-xl-block">
                 <Nav1 />
               </nav>
-              <div className="tmp-header-right">
+              <div className="tmp-header-right" style={{ marginRight: '10px' }}>
                 <div className="social-share-wrapper d-none d-md-block">
                   <div className="social-link">
                     <a
@@ -81,11 +81,21 @@ export default function Header1() {
                 <button
                   className="lang-toggle-btn"
                   onClick={toggleLanguage}
-                  title={lang === "pt" ? "Switch to English" : "Mudar para Português"}
+                  title={
+                    lang === "pt" ? "Switch to English" : "Mudar para Português"
+                  }
                 >
-                  <span className={`lang-option ${lang === "pt" ? "active" : ""}`}>PT</span>
+                  <span
+                    className={`lang-option ${lang === "pt" ? "active" : ""}`}
+                  >
+                    PT
+                  </span>
                   <span className="lang-separator">/</span>
-                  <span className={`lang-option ${lang === "en" ? "active" : ""}`}>EN</span>
+                  <span
+                    className={`lang-option ${lang === "en" ? "active" : ""}`}
+                  >
+                    EN
+                  </span>
                 </button>
                 <div className="actions-area">
                   <div className="tmp-side-collups-area d-none d-xl-block">
