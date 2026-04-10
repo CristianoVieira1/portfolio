@@ -1,39 +1,31 @@
-import { useEffect, useState } from "react";
+import { useCallback, useState } from "react";
+import "./styles/main.scss";
 
-import { Toaster } from "react-hot-toast";
-import { ThemeProvider } from "styled-components";
-import { Routes } from "./routes";
-import GlobalStyles from "./theme";
-
-import theme from "./theme/theme";
+import LoadingScreen from "./components/common/LoadingScreen";
+import HomePage2 from "./pages/homes/index-02";
+import { ModalUIProvider } from "./context/ModalUIContext";
+import { LanguageProvider } from "./context/LanguageContext";
 
 function App() {
-  const [isLoading, setIsLoading] = useState(true);
+  const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 1500);
+  const handleLoadingComplete = useCallback(() => {
+    setLoading(false);
   }, []);
 
   return (
-    <ThemeProvider theme={theme}>
-      {!isLoading && (
-        <>
-          <Routes />
-          <GlobalStyles />
-          <Toaster position="top-right" />
-        </>
-      )}
-      {isLoading && (
-        <div id="loader" className="loader">
-          <div id="loaderContent" className="loader__content">
-            <div className="loader__shadow"></div>
-            <div className="loader__box"></div>
-          </div>
+    <LanguageProvider>
+      <ModalUIProvider>
+        {loading && <LoadingScreen onComplete={handleLoadingComplete} />}
+        <div
+          className={`app-content-shell ${
+            loading ? "app-content-shell--hidden" : "app-content-shell--visible"
+          }`}
+        >
+          <HomePage2 />
         </div>
-      )}
-    </ThemeProvider>
+      </ModalUIProvider>
+    </LanguageProvider>
   );
 }
 

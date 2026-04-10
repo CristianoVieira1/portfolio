@@ -1,15 +1,17 @@
-import { ReportHandler } from 'web-vitals'
+// src/reportWebVitals.ts
+import { onCLS, onINP, onLCP, onFCP, onTTFB } from "web-vitals";
+import type { Metric } from "web-vitals";
+
+type ReportHandler = (metric: Metric) => void;
 
 const reportWebVitals = (onPerfEntry?: ReportHandler) => {
   if (onPerfEntry && onPerfEntry instanceof Function) {
-    import('web-vitals').then(({ getCLS, getFID, getFCP, getLCP, getTTFB }) => {
-      getCLS(onPerfEntry)
-      getFID(onPerfEntry)
-      getFCP(onPerfEntry)
-      getLCP(onPerfEntry)
-      getTTFB(onPerfEntry)
-    })
+    onCLS(onPerfEntry);
+    onINP(onPerfEntry);
+    onLCP(onPerfEntry);
+    onFCP(onPerfEntry);
+    onTTFB(onPerfEntry);
   }
-}
+};
 
-export default reportWebVitals
+export default reportWebVitals;
