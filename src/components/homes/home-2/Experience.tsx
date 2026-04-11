@@ -13,7 +13,7 @@ const resumeItemsData = [
       en: "Development and maintenance of corporate mobile app focused on performance, internal API integration, and optimized experience for field teams.",
     },
     tags: ["React Native", "TypeScript", "REST APIs", "CI/CD"],
-    type: "CLT",
+    type: { pt: "CLT", en: "CLT" },
   },
   {
     duration: { pt: "novembro de 2023 - junho de 2024", en: "November 2023 - June 2024" },
@@ -24,7 +24,7 @@ const resumeItemsData = [
       en: "Worked on digital time-tracking app with biometrics, geolocation, and offline support.",
     },
     tags: ["React Native", "Offline-first", "Biometrics"],
-    type: "CLT",
+    type: { pt: "CLT", en: "CLT" },
   },
   {
     duration: { pt: "agosto de 2023 - fevereiro de 2024", en: "August 2023 - February 2024" },
@@ -35,7 +35,7 @@ const resumeItemsData = [
       en: "Mobile platform focused on usability and retention with modular architecture.",
     },
     tags: ["React Native", "Firebase", "UX"],
-    type: "Freelancer",
+    type: { pt: "Freelancer", en: "Freelancer" },
   },
   {
     duration: { pt: "agosto de 2021 - setembro de 2023", en: "August 2021 - September 2023" },
@@ -46,7 +46,7 @@ const resumeItemsData = [
       en: "Development of multiple mobile apps including banking, e-commerce, and corporate systems.",
     },
     tags: ["React Native", "React", "Node.js", "PostgreSQL"],
-    type: "CLT",
+    type: { pt: "CLT", en: "CLT" },
   },
   {
     duration: { pt: "novembro de 2020 - agosto de 2021", en: "November 2020 - August 2021" },
@@ -57,7 +57,7 @@ const resumeItemsData = [
       en: "Mobile app creation focused on rapid product validation and visual consistency.",
     },
     tags: ["React Native", "Styled Components"],
-    type: "CLT",
+    type: { pt: "CLT", en: "CLT" },
   },
   {
     duration: { pt: "abril de 2019 - novembro de 2020", en: "April 2019 - November 2020" },
@@ -68,7 +68,7 @@ const resumeItemsData = [
       en: "Web interface development with React, e-commerce, and landing pages focused on conversion.",
     },
     tags: ["React", "JavaScript", "SCSS", "WordPress"],
-    type: "CLT",
+    type: { pt: "CLT", en: "CLT" },
   },
 ];
 
@@ -82,7 +82,7 @@ const educationItemsData = [
       en: "English course focused on conversation and professional writing for the tech industry.",
     },
     tags: ["English", "Communication"],
-    type: "Education",
+    type: { pt: "Formação", en: "Education" },
   },
   {
     duration: { pt: "dezembro de 2021 - dezembro de 2023", en: "December 2021 - December 2023" },
@@ -93,7 +93,7 @@ const educationItemsData = [
       en: "Technology degree covering software engineering, databases, networking, and programming.",
     },
     tags: ["Software Engineering", "Databases", "Algorithms"],
-    type: "Education",
+    type: { pt: "Formação", en: "Education" },
   },
 ];
 
@@ -168,7 +168,7 @@ function ExperienceCard({
       )}
 
       {/* type badge */}
-      <span className="experience-card-premium__type">{item.type}</span>
+      <span className="experience-card-premium__type">{item.type[lang]}</span>
 
       {/* content */}
       <span className="experience-card-premium__duration">{item.duration[lang]}</span>
@@ -232,7 +232,7 @@ function ExperienceModal({
 
           <div className="exp-modal-body">
             {/* header */}
-            <span className="exp-modal-badge">{item.type}</span>
+            <span className="exp-modal-badge">{item.type[lang]}</span>
             <motion.h3
               className="exp-modal-title"
               initial={{ opacity: 0, x: -20 }}

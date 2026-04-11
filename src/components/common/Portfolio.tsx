@@ -58,6 +58,10 @@ const portfolioDetails: Record<string, { pt: string; en: string }> = {
     pt: "Aplicativo mobile para registro de ponto digital desenvolvido com foco em praticidade, segurança e confiabilidade, permitindo marcações rápidas, controle de jornada em tempo real e funcionamento offline, com recursos avançados como autenticação por biometria e geolocalização.",
     en: "Mobile application for digital time tracking designed with a focus on usability, security, and reliability, enabling fast check-ins, real-time work hour tracking, and offline functionality, with advanced features such as biometric and geolocation authentication.",
   },
+  topotronics: {
+    pt: "Aplicativo mobile para cálculos de engenharia de estradas desenvolvido de forma independente, com foco em precisão, performance e usabilidade. Desenvolvi o app por completo, utilizei Firebase como backend e Asaas para gestão de assinaturas e pagamentos recorrentes, publiquei nas lojas e mantenho a manutenção contínua do produto.",
+    en: "Mobile application for road engineering calculations developed independently, focused on precision, performance, and usability. I built the app end-to-end, used Firebase as the backend and Asaas for subscription and recurring payment management, published it on app stores, and continue maintaining the product.",
+  },
 };
 export default function Portofolio() {
   const { lang } = useLanguage();

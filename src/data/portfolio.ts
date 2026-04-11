@@ -131,6 +131,18 @@ export const portfolioItems = [
     slug: "bateponto-pontotel",
     projectUrl: "https://github.com/CristianoVieira1",
   },
+  {
+    id: 12,
+    animationOrder: 12,
+    imageSrc: "/portfolio/assets/images/gallery/pdc.png",
+    width: 800,
+    height: 800,
+    title: "Topotronics",
+    tags: ["React Native", "Firebase", "Asaas"],
+    categories: ["Mobile", "Frontend", "Fullstack"],
+    slug: "topotronics",
+    projectUrl: "https://github.com/CristianoVieira1",
+  },
 ];
 
 export const portfolioItems2 = [
