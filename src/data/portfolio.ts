@@ -50,7 +50,7 @@ export const portfolioItems = [
   {
     id: 5,
     animationOrder: 5,
-    imageSrc: "/portfolio/assets/images/gallery/parceiro.png",
+    imageSrc: "/portfolio/assets/images/gallery/pdc.png",
     width: 1400,
     height: 1400,
     title: "Parceiro da Construção",
@@ -134,7 +134,7 @@ export const portfolioItems = [
   {
     id: 12,
     animationOrder: 12,
-    imageSrc: "/portfolio/assets/images/gallery/pdc.png",
+    imageSrc: "/portfolio/assets/images/gallery/topotronics.png",
     width: 800,
     height: 800,
     title: "Topotronics",
