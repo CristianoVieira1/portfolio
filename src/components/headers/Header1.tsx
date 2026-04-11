@@ -49,7 +49,7 @@ export default function Header1() {
               <nav className="tmp-mainmenu-nav d-none d-xl-block">
                 <Nav1 />
               </nav>
-              <div className="tmp-header-right" style={{ marginRight: '10px' }}>
+              <div className="tmp-header-right">
                 <div className="social-share-wrapper d-none d-md-block">
                   <div className="social-link">
                     <a

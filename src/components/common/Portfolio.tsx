@@ -1,47 +1,79 @@
-import { portfolioItems } from "@/data/portfolio";
-import { useEffect, useMemo, useState } from "react";
 import { useLanguage } from "@/context/LanguageContext";
+import { portfolioItems } from "@/data/portfolio";
 import { translations } from "@/i18n/translations";
+import { useEffect, useMemo, useState } from "react";
 
 type PortfolioItem = (typeof portfolioItems)[number];
 
 const portfolioDetails: Record<string, { pt: string; en: string }> = {
   "colombo-bank": {
-    pt: "Aplicativo bancário mobile com foco em navegação intuitiva, componentes reutilizáveis e evolução contínua da base de código.",
-    en: "Mobile banking app focused on intuitive navigation, reusable components, and continuous codebase evolution.",
+    pt: "Aplicativo bancário mobile desenvolvido com foco em experiência do usuário, navegação intuitiva e arquitetura escalável, utilizando componentes reutilizáveis para garantir consistência e evolução contínua do produto.",
+    en: "Mobile banking application built with a strong focus on user experience, intuitive navigation, and scalable architecture, leveraging reusable components to ensure consistency and continuous product evolution.",
   },
+
   "gazin-bank": {
-    pt: "Projeto com integrações de APIs e fluxos financeiros, priorizando estabilidade, clareza de interface e performance em produção.",
-    en: "Project with API integrations and financial flows, prioritizing stability, interface clarity, and production performance.",
+    pt: "Projeto financeiro com integrações robustas de APIs e gestão de fluxos transacionais, priorizando alta disponibilidade, performance em produção e clareza na experiência do usuário.",
+    en: "Financial project featuring robust API integrations and transactional flow management, prioritizing high availability, production performance, and clear user experience.",
   },
+
+  "jobtto-mobile": {
+    pt: "Aplicativo mobile desenvolvido em React Native com foco em performance, navegação fluida e experiência consistente, estruturado com boas práticas de arquitetura e integração com APIs.",
+    en: "Mobile application built with React Native, focusing on performance, smooth navigation, and consistent user experience, structured with solid architectural practices and API integrations.",
+  },
+
+  "jobtto-web": {
+    pt: "Aplicação web desenvolvida em React com foco em responsividade, performance e organização de código, garantindo escalabilidade e facilidade de manutenção.",
+    en: "Web application built with React, focused on responsiveness, performance, and clean code organization, ensuring scalability and ease of maintenance.",
+  },
+
+  "mais-negocio-vibra": {
+    pt: "Aplicativo corporativo da Vibra Energia voltado para gestão e operação de negócios, com foco em performance, integração com serviços internos e experiência otimizada para usuários em campo.",
+    en: "Corporate application from Vibra Energia focused on business management and operations, emphasizing performance, integration with internal services, and an optimized experience for field users.",
+  },
+
   "fbv-2023": {
-    pt: "Aplicação mobile construída com atenção à experiência do usuário, consistência visual e entregas rápidas para validar produto.",
-    en: "Mobile app built with attention to user experience, visual consistency, and fast deliveries to validate the product.",
+    pt: "Aplicação mobile desenvolvida com foco em validação rápida de produto, garantindo consistência visual, fluidez na navegação e uma experiência centrada no usuário.",
+    en: "Mobile application built with a focus on rapid product validation, ensuring visual consistency, smooth navigation, and a user-centered experience.",
   },
+
   "sistema-siga": {
-    pt: "Solução com frente mobile e web para operação do negócio, com estrutura preparada para escalar funcionalidades e integrações.",
-    en: "Solution with mobile and web fronts for business operations, structured to scale features and integrations.",
+    pt: "Sistema completo com aplicações mobile e web voltadas à operação do negócio, estruturado com arquitetura escalável para suportar crescimento, novas funcionalidades e integrações futuras.",
+    en: "Full system with mobile and web applications designed for business operations, built on a scalable architecture to support growth, new features, and future integrations.",
   },
+
   "parceiro-da-construcao": {
-    pt: "Plataforma mobile com foco em usabilidade e retenção, organizada para crescimento do produto com manutenção sustentável.",
-    en: "Mobile platform focused on usability and retention, organized for product growth with sustainable maintenance.",
+    pt: "Plataforma mobile orientada à usabilidade e retenção de usuários, com arquitetura modular que facilita manutenção contínua e expansão do produto.",
+    en: "Mobile platform focused on usability and user retention, featuring a modular architecture that supports continuous maintenance and product expansion.",
   },
+
   "otica-house": {
-    pt: "Projeto web para e-commerce com experiência de compra mais fluida, performance consistente e evolução orientada a resultados.",
-    en: "Web e-commerce project with a smoother purchase flow, consistent performance, and results-driven evolution.",
+    pt: "E-commerce web desenvolvido para oferecer uma experiência de compra fluida, com foco em performance, conversão e evolução contínua baseada em métricas.",
+    en: "Web e-commerce platform designed to deliver a smooth shopping experience, focusing on performance, conversion, and data-driven continuous improvement.",
+  },
+  "apotiguar-ecommerce": {
+    pt: "E-commerce desenvolvido na plataforma Tray Corp, com foco em performance, navegação otimizada e gestão eficiente de catálogo, integrando funcionalidades essenciais como checkout, logística e controle de pedidos para garantir uma experiência de compra consistente.",
+    en: "E-commerce built on the Tray Corp platform, focused on performance, optimized navigation, and efficient catalog management, integrating essential features such as checkout, logistics, and order management to ensure a consistent shopping experience.",
+  },
+  "bateponto-pontotel": {
+    pt: "Aplicativo mobile para registro de ponto digital desenvolvido com foco em praticidade, segurança e confiabilidade, permitindo marcações rápidas, controle de jornada em tempo real e funcionamento offline, com recursos avançados como autenticação por biometria e geolocalização.",
+    en: "Mobile application for digital time tracking designed with a focus on usability, security, and reliability, enabling fast check-ins, real-time work hour tracking, and offline functionality, with advanced features such as biometric and geolocation authentication.",
   },
 };
-
 export default function Portofolio() {
   const { lang } = useLanguage();
   const t = translations.portfolio;
 
-  const [activeCategory, setActiveCategory] = useState(lang === "pt" ? "Todos" : "All");
-  const [selectedProject, setSelectedProject] = useState<PortfolioItem | null>(null);
+  const [activeCategory, setActiveCategory] = useState(
+    lang === "pt" ? "Todos" : "All",
+  );
+  const [selectedProject, setSelectedProject] = useState<PortfolioItem | null>(
+    null,
+  );
 
-  const categories = lang === "pt"
-    ? ["Todos", "Mobile", "Web", "Frontend", "Fullstack"]
-    : ["All", "Mobile", "Web", "Frontend", "Fullstack"];
+  const categories =
+    lang === "pt"
+      ? ["Todos", "Mobile", "Web", "Frontend", "Fullstack"]
+      : ["All", "Mobile", "Web", "Frontend", "Fullstack"];
 
   useEffect(() => {
     setActiveCategory(lang === "pt" ? "Todos" : "All");
@@ -71,7 +103,7 @@ export default function Portofolio() {
     return activeCategory === allLabel
       ? portfolioItems
       : portfolioItems.filter((item) =>
-          item.categories.includes(activeCategory)
+          item.categories.includes(activeCategory),
         );
   }, [activeCategory, lang]);
 
@@ -91,10 +123,10 @@ export default function Portofolio() {
   };
 
   const selectedProjectDescription = selectedProject
-    ? portfolioDetails[selectedProject.slug]?.[lang] ??
+    ? (portfolioDetails[selectedProject.slug]?.[lang] ??
       (lang === "pt"
         ? "Projeto entregue com foco em performance, experiência de uso e evolução sustentável do produto."
-        : "Project delivered with a focus on performance, user experience, and sustainable product evolution.")
+        : "Project delivered with a focus on performance, user experience, and sustainable product evolution."))
     : "";
 
   return (
@@ -181,7 +213,9 @@ export default function Portofolio() {
                             <ul>
                               {item.tags.map((tag, index) => (
                                 <li key={index}>
-                                  <span className="tag-item portfolio-tag-pill">{tag}</span>
+                                  <span className="tag-item portfolio-tag-pill">
+                                    {tag}
+                                  </span>
                                 </li>
                               ))}
                             </ul>
@@ -193,7 +227,9 @@ export default function Portofolio() {
                           onClick={() => openProjectModal(item)}
                         >
                           <span className="icon-reverse-wrapper">
-                            <span className="btn-text">{t.viewProject[lang]}</span>
+                            <span className="btn-text">
+                              {t.viewProject[lang]}
+                            </span>
                             <span className="btn-icon">
                               <i className="fa-sharp fa-regular fa-arrow-right" />
                             </span>
@@ -249,7 +285,10 @@ export default function Portofolio() {
                 <span className="portfolio-top-modal__eyebrow">
                   {modalCopy.detailsTitle}
                 </span>
-                <h3 id="portfolio-top-modal-title" className="portfolio-top-modal__title">
+                <h3
+                  id="portfolio-top-modal-title"
+                  className="portfolio-top-modal__title"
+                >
                   {selectedProject.title}
                 </h3>
                 <p className="portfolio-top-modal__description">
@@ -271,7 +310,10 @@ export default function Portofolio() {
                   <h4>{modalCopy.categoryLabel}</h4>
                   <div className="portfolio-top-modal__chips">
                     {selectedProject.categories.map((category) => (
-                      <span key={category} className="portfolio-top-modal__chip is-category">
+                      <span
+                        key={category}
+                        className="portfolio-top-modal__chip is-category"
+                      >
                         {category}
                       </span>
                     ))}
