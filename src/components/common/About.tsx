@@ -1,6 +1,6 @@
-import OdometerComponent from "./OdometerComponent";
 import { useLanguage } from "@/context/LanguageContext";
 import { translations } from "@/i18n/translations";
+import OdometerComponent from "./OdometerComponent";
 
 export default function About({ parentClass = "about-us-area" }) {
   const { lang } = useLanguage();
@@ -53,7 +53,7 @@ export default function About({ parentClass = "about-us-area" }) {
                         <img
                           alt="logo"
                           loading="lazy"
-                          src="/portfolio/assets/images/about/logo-1.svg"
+                          src="/portfolio/assets/images/about/react.svg"
                           width={24}
                           height={24}
                         />
@@ -70,7 +70,7 @@ export default function About({ parentClass = "about-us-area" }) {
                         <img
                           loading="lazy"
                           alt="logo"
-                          src="/portfolio/assets/images/about/logo-2.svg"
+                          src="/portfolio/assets/images/about/nextjs.svg"
                           width={24}
                           height={24}
                         />
@@ -82,11 +82,10 @@ export default function About({ parentClass = "about-us-area" }) {
                 </div>
               </div>
               <div className="about-actions-row mt--40 tmp-scroll-trigger tmp-fade-in animation-order-6">
-                <a
-                  className="about-projects-btn"
-                  href="#portfolio"
-                >
-                  <span className="about-projects-btn__text">{t.viewProjectsBtn[lang]}</span>
+                <a className="about-projects-btn" href="#portfolio">
+                  <span className="about-projects-btn__text">
+                    {t.viewProjectsBtn[lang]}
+                  </span>
                   <span className="about-projects-btn__icon" aria-hidden="true">
                     <i className="fa-regular fa-grid-2" />
                   </span>
@@ -96,7 +95,9 @@ export default function About({ parentClass = "about-us-area" }) {
                   href="/portfolio/assets/pdf/CristianoBorges.pdf"
                   download="CristianoBorges.pdf"
                 >
-                  <span className="about-cv-link__text">{t.downloadCvBtn[lang]}</span>
+                  <span className="about-cv-link__text">
+                    {t.downloadCvBtn[lang]}
+                  </span>
                   <span className="about-cv-link__icon" aria-hidden="true">
                     <i className="fa-regular fa-download" />
                   </span>
