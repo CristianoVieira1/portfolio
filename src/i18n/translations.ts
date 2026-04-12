@@ -50,7 +50,7 @@ export const translations = {
     },
     titleLine2: { pt: "focado em resultado", en: "focused on results" },
     description: {
-      pt: "Sou desenvolvedor especializado em React Native, criando aplicativos móveis para Android e iOS há mais de 5 anos. Minha paixão é transformar ideias em apps funcionais, intuitivos e de alta performance.\n\nAo longo da minha carreira, trabalhei em projetos para startups e empresas de diferentes segmentos, sempre prezando pela qualidade do código, organização, pontualidade e boa comunicação com o time. Acredito que tecnologia é sobre pessoas, por isso busco sempre entregar soluções que realmente fazem a diferença para o usuário final.",
+      pt: "Sou desenvolvedor especializado em React Native, criando aplicativos móveis para Android e iOS há mais de 6 anos. Minha paixão é transformar ideias em apps funcionais, intuitivos e de alta performance.\n\nAo longo da minha carreira, trabalhei em projetos para startups e empresas de diferentes segmentos, sempre prezando pela qualidade do código, organização, pontualidade e boa comunicação com o time. Acredito que tecnologia é sobre pessoas, por isso busco sempre entregar soluções que realmente fazem a diferença para o usuário final.",
       en: "I'm a developer specialized in React Native, building Android and iOS apps for over 5 years. I also work with React and Next.js for web, always focused on performance, usability and sustainable code.",
     },
     card1Title: { pt: "React Native", en: "React Native" },
