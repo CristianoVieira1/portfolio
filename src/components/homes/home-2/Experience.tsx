@@ -118,8 +118,8 @@ const educationItemsData = [
   },
   {
     duration: {
-      pt: "dezembro de 2021 - dezembro de 2023",
-      en: "December 2021 - December 2023",
+      pt: "2021 - 2023",
+      en: "2021 - 2023",
     },
     title: {
       pt: "Análise e Desenvolvimento de Sistemas",
