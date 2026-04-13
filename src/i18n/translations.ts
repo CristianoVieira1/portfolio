@@ -19,8 +19,8 @@ export const translations = {
     },
     titleHighlight: { pt: "React Native", en: "React Native" },
     description: {
-      pt: "Sou desenvolvedor especializado em <span>React Native</span>, criando aplicativos Android e iOS há mais de 5 anos. Também desenvolvo soluções web com <span>React e Next.js</span> com foco em performance, experiência do usuário e evolução contínua do produto.",
-      en: "I'm a developer specialized in <span>React Native</span>, building Android and iOS apps for over 5 years. I also develop web solutions with <span>React and Next.js</span> focused on performance, user experience and continuous product evolution.",
+      pt: "Sou desenvolvedor especializado em <span>React Native</span>, criando aplicativos Android e iOS há mais de 6 anos. Também desenvolvo soluções web com <span>React e Next.js</span> com foco em performance, experiência do usuário e evolução contínua do produto.",
+      en: "I'm a developer specialized in <span>React Native</span>, building Android and iOS apps for over 6 years. I also develop web solutions with <span>React and Next.js</span> focused on performance, user experience and continuous product evolution.",
     },
     aboutBtn: { pt: "Sobre mim", en: "About me" },
     findMe: { pt: "Me encontre em", en: "Find me on" },
