@@ -26,7 +26,13 @@
       content="Portfolio of Cristiano Borges, React Native specialist building performant mobile apps with modern UI and clean architecture."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="/portfolio/share.png" />
+    <meta
+      property="og:image"
+      content="https://cristianovieira1.github.io/portfolio/share.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/png" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:locale:alternate" content="pt_BR" />
     <meta property="og:site_name" content="Cristiano Borges Portfolio" />
@@ -96,15 +102,21 @@
           "America/Noronha",
         ]);
 
-        const browserLanguages = [...(navigator.languages || []), navigator.language]
+        const browserLanguages = [
+          ...(navigator.languages || []),
+          navigator.language,
+        ]
           .filter(Boolean)
           .map((lang) => lang.toLowerCase());
 
         const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
         const isBrazilLocale = browserLanguages.includes("pt-br");
-        const isBrazilTimezone = Boolean(timeZone) && brazilTimezones.has(timeZone);
+        const isBrazilTimezone =
+          Boolean(timeZone) && brazilTimezones.has(timeZone);
         const usePortuguese = isBrazilLocale || isBrazilTimezone;
-        const selected = usePortuguese ? contentByLocale.ptBR : contentByLocale.en;
+        const selected = usePortuguese
+          ? contentByLocale.ptBR
+          : contentByLocale.en;
 
         const setMeta = (selector, value) => {
           const tag = document.querySelector(selector);
@@ -123,7 +135,10 @@
         setMeta('meta[property="og:site_name"]', selected.ogSiteName);
         setMeta('meta[property="og:locale"]', selected.ogLocale);
         setMeta('meta[name="twitter:title"]', selected.twitterTitle);
-        setMeta('meta[name="twitter:description"]', selected.twitterDescription);
+        setMeta(
+          'meta[name="twitter:description"]',
+          selected.twitterDescription,
+        );
       })();
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
