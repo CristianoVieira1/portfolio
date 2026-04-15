@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/portfolio/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cristiano Borges — React Native Developer</title>
+    <meta
+      name="description"
+      content="Cristiano Borges | React Native developer and specialist. Portfolio showcasing mobile apps, UI, and React Native expertise."
+    />
+    <meta name="author" content="Cristiano Borges" />
+    <meta
+      name="keywords"
+      content="Cristiano Borges, React Native, React Native developer, mobile developer, portfolio, frontend specialist, React developer, Brazilian developer, app developer, UI/UX, mobile applications, resume"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#0f172a" />
+    <link
+      rel="canonical"
+      href="https://cristianovieira1.github.io/portfolio/"
+    />
+
+    <meta
+      property="og:title"
+      content="Cristiano Borges — React Native Developer"
+    />
+    <meta
+      property="og:description"
+      content="Portfolio of Cristiano Borges, React Native specialist building performant mobile apps with modern UI and clean architecture."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://cristianovieira1.github.io/portfolio/"
+      
+    />
+    <meta
+      property="og:image"
+      content="https://cristianovieira1.github.io/portfolio/share.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="pt_BR" />
+    <meta property="og:site_name" content="Cristiano Borges Portfolio" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@CristianoBorges" />
+    <meta
+      name="twitter:title"
+      content="Cristiano Borges — React Native Developer"
+    />
+    <meta
+      name="twitter:description"
+      content="Portfolio of Cristiano Borges, React Native specialist building performant mobile apps with modern UI and clean architecture."
+    />
+    <meta
+      name="twitter:image"
+      content="https://cristianovieira1.github.io/portfolio/share.png"
+      
+    />
+    <script>
+      (() => {
+        const contentByLocale = {
+          en: {
+            htmlLang: "en",
+            title: "Cristiano Borges — React Native Developer",
+            description:
+              "Cristiano Borges | React Native developer and specialist. Portfolio showcasing mobile apps, UI, and React Native expertise.",
+            keywords:
+              "Cristiano Borges, React Native, React Native developer, mobile developer, portfolio, frontend specialist, React developer, Brazilian developer, app developer, UI/UX, mobile applications, resume",
+            ogTitle: "Cristiano Borges — React Native Developer",
+            ogDescription:
+              "Portfolio of Cristiano Borges, React Native specialist building performant mobile apps with modern UI and clean architecture.",
+            ogSiteName: "Cristiano Borges Portfolio",
+            ogLocale: "en_US",
+            twitterTitle: "Cristiano Borges — React Native Developer",
+            twitterDescription:
+              "Portfolio of Cristiano Borges, React Native specialist building performant mobile apps with modern UI and clean architecture.",
+          },
+          ptBR: {
+            htmlLang: "pt-BR",
+            title: "Cristiano Borges — Desenvolvedor React Native",
+            description:
+              "Cristiano Borges | Desenvolvedor e especialista em React Native. Portfólio com apps mobile, UI moderna e expertise em React Native.",
+            keywords:
+              "Cristiano Borges, React Native, desenvolvedor React Native, desenvolvedor mobile, portfólio, especialista frontend, desenvolvedor React, desenvolvedor brasileiro, desenvolvedor de aplicativos, UI/UX, aplicações mobile, currículo",
+            ogTitle: "Cristiano Borges — Desenvolvedor React Native",
+            ogDescription:
+              "Portfólio de Cristiano Borges, especialista em React Native, criando apps mobile performáticos com UI moderna e arquitetura limpa.",
+            ogSiteName: "Portfólio de Cristiano Borges",
+            ogLocale: "pt_BR",
+            twitterTitle: "Cristiano Borges — Desenvolvedor React Native",
+            twitterDescription:
+              "Portfólio de Cristiano Borges, especialista em React Native, criando apps mobile performáticos com UI moderna e arquitetura limpa.",
+          },
+        };
+
+        const brazilTimezones = new Set([
+          "America/Sao_Paulo",
+          "America/Rio_Branco",
+          "America/Manaus",
+          "America/Belem",
+          "America/Fortaleza",
+          "America/Recife",
+          "America/Maceio",
+          "America/Bahia",
+          "America/Araguaina",
+          "America/Cuiaba",
+          "America/Campo_Grande",
+          "America/Porto_Velho",
+          "America/Boa_Vista",
+          "America/Noronha",
+        ]);
+
+        const browserLanguages = [
+          ...(navigator.languages || []),
+          navigator.language,
+        ]
+          .filter(Boolean)
+          .map((lang) => lang.toLowerCase());
+
+        const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+        const isBrazilLocale = browserLanguages.includes("pt-br");
+        const isBrazilTimezone =
+          Boolean(timeZone) && brazilTimezones.has(timeZone);
+        const usePortuguese = isBrazilLocale || isBrazilTimezone;
+        const selected = usePortuguese
+          ? contentByLocale.ptBR
+          : contentByLocale.en;
+
+        const setMeta = (selector, value) => {
+          const tag = document.querySelector(selector);
+          if (tag && value) {
+            tag.setAttribute("content", value);
+          }
+        };
+
+        document.documentElement.lang = selected.htmlLang;
+        document.title = selected.title;
+
+        setMeta('meta[name="description"]', selected.description);
+        setMeta('meta[name="keywords"]', selected.keywords);
+        setMeta('meta[property="og:title"]', selected.ogTitle);
+        setMeta('meta[property="og:description"]', selected.ogDescription);
+        setMeta('meta[property="og:site_name"]', selected.ogSiteName);
+        setMeta('meta[property="og:locale"]', selected.ogLocale);
+        setMeta('meta[name="twitter:title"]', selected.twitterTitle);
+        setMeta(
+          'meta[name="twitter:description"]',
+          selected.twitterDescription,
+        );
+      })();
+    </script>
+
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-8H1Z3H1L0C"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-8H1Z3H1L0C");
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/portfolio/favicon.svg" />
+    <script type="module" crossorigin src="/portfolio/assets/index-Bqgpdjc7.js"></script>
+    <link rel="stylesheet" crossorigin href="/portfolio/assets/index-Cj0ZGCFv.css">
+  <link rel="manifest" href="/portfolio/manifest.webmanifest"></head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
