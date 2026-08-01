@@ -4,10 +4,11 @@ import { useEffect, useState, type MouseEvent } from "react";
 const navItems = [
   { id: 1, href: "#home", text: "Início" },
   { id: 2, href: "#about", text: "Sobre" },
-  { id: 3, href: "#resume-section", text: "Experiência" },
-  { id: 4, href: "#portfolio", text: "Portfólio" },
-  { id: 5, href: "#skills", text: "Habilidades" },
-  { id: 6, href: "#contacts", text: "Contato" },
+  { id: 3, href: "#projeto", text: "Vamos fazer um projeto" },
+  { id: 4, href: "#resume-section", text: "Experiência" },
+  { id: 5, href: "#portfolio", text: "Portfólio" },
+  { id: 6, href: "#skills", text: "Habilidades" },
+  { id: 7, href: "#contacts", text: "Contato" },
 ];
 
 export default function OnepageNavMobile({

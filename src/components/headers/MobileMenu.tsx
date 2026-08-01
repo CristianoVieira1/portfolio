@@ -31,6 +31,13 @@ export default function MobileMenu() {
       submenu: [] as { href: string; label: string }[],
     },
     {
+      label: nav.project[lang],
+      href: "#projeto",
+      isLink: false,
+      hasDropdown: false,
+      submenu: [] as { href: string; label: string }[],
+    },
+    {
       label: nav.experience[lang],
       href: "#resume-section",
       isLink: false,

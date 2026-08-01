@@ -1,7 +1,9 @@
 import About from "@/components/common/About";
 import Contact from "@/components/common/Contact";
 import Experiences2 from "@/components/common/Experiences2";
+import HireSeoSection from "@/components/common/HireSeoSection";
 import Portofolio from "@/components/common/Portfolio";
+import ProjectCta from "@/components/common/ProjectCta";
 import Skills from "@/components/common/Skills";
 import TechStackSection from "@/components/common/TechStackSection";
 import TextAnim from "@/components/common/TextAnim";
@@ -15,14 +17,18 @@ import MetaComponent from "@/components/common/Metacomponent";
 import { useLanguage } from "@/context/LanguageContext";
 import { translations } from "@/i18n/translations";
 
-const metadata = {
-  title: "Cristiano Borges | Desenvolvedor React Native Sênior",
-  description:
-    "Portfólio de Cristiano Borges, desenvolvedor React Native com mais de 6 anos de experiência em aplicativos iOS, Android e produtos web.",
-};
-
 export default function HomePage2() {
   const { lang } = useLanguage();
+  const metadata = {
+    title:
+      lang === "pt"
+        ? "Desenvolvedor React Native Freelancer | Cristiano Borges"
+        : "Freelance React Native Developer | Cristiano Borges",
+    description:
+      lang === "pt"
+        ? "Contrate um desenvolvedor React Native sênior para apps iOS e Android. Freelancer e PJ remoto no Brasil, com React, Next.js e mais de 6 anos de experiência."
+        : "Hire a senior React Native developer for iOS and Android apps. Available for remote freelance and contract work, with React, Next.js and 6+ years of experience.",
+  };
 
   return (
     <>
@@ -35,6 +41,8 @@ export default function HomePage2() {
         <Hero />
         <TextAnim />
         <About />
+        <ProjectCta />
+        <HireSeoSection />
         <Experience />
         <Skills />
         <Portofolio />

@@ -15,8 +15,14 @@ export default function Footer2() {
   const links = [
     { href: "#home", label: nav.home[lang] },
     { href: "#about", label: nav.about[lang] },
+    { href: "#projeto", label: nav.project[lang] },
+    {
+      href: "#servicos",
+      label: lang === "pt" ? "Serviços" : "Services",
+    },
     { href: "#resume-section", label: nav.experience[lang] },
     { href: "#portfolio", label: nav.portfolio[lang] },
+    { href: "#faq", label: "FAQ" },
     { href: "#contacts", label: nav.contact[lang] },
   ];
 

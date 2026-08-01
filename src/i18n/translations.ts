@@ -5,9 +5,33 @@ export const translations = {
   nav: {
     home: { pt: "Início", en: "Home" },
     about: { pt: "Sobre", en: "About" },
+    project: { pt: "Vamos fazer um projeto", en: "Let's build a project" },
     experience: { pt: "Experiência", en: "Experience" },
     portfolio: { pt: "Portfólio", en: "Portfolio" },
     contact: { pt: "Contato", en: "Contact" },
+  },
+
+  projectCta: {
+    eyebrow: {
+      pt: "Pronto para começar?",
+      en: "Ready to start?",
+    },
+    title: {
+      pt: "Vamos fazer um projeto sair do papel",
+      en: "Let's get a project off the ground",
+    },
+    description: {
+      pt: "Tem uma ideia de app, precisa evoluir um produto ou reforçar o time com React Native? Me chama no WhatsApp e alinhamos escopo, prazo e próximos passos.",
+      en: "Have an app idea, need to evolve a product, or reinforce your team with React Native? Message me on WhatsApp and we'll align scope, timeline and next steps.",
+    },
+    whatsapp: {
+      pt: "Falar no WhatsApp agora",
+      en: "Chat on WhatsApp now",
+    },
+    form: {
+      pt: "Preferir o formulário",
+      en: "Prefer the form",
+    },
   },
 
   // Hero
@@ -19,13 +43,130 @@ export const translations = {
     },
     titleHighlight: { pt: "React Native Sênior", en: "Senior React Native" },
     description: {
-      pt: "Crio aplicativos iOS e Android rápidos, estáveis e prontos para evoluir — mais de 6 anos construindo produtos digitais com <span>React Native</span>, além de soluções web com <span>React e Next.js</span>.",
-      en: "I build fast, stable iOS and Android apps ready to evolve — 6+ years shipping digital products with <span>React Native</span>, plus web solutions with <span>React and Next.js</span>.",
+      pt: "Freelancer e desenvolvedor <span>React Native</span> sênior para apps iOS e Android — mais de 6 anos entregando produtos estáveis, com integrações e evolução contínua. Também atuo com <span>React e Next.js</span> sob demanda remota no Brasil.",
+      en: "Freelance senior <span>React Native</span> developer for iOS and Android apps — 6+ years shipping stable products with integrations and continuous evolution. I also build with <span>React and Next.js</span> for remote projects.",
     },
     primaryCta: { pt: "Falar sobre um projeto", en: "Talk about a project" },
     secondaryCta: { pt: "Ver projetos", en: "View projects" },
     aboutBtn: { pt: "Sobre mim", en: "About me" },
     findMe: { pt: "Me encontre em", en: "Find me on" },
+  },
+
+  hire: {
+    subtitle: {
+      pt: "Como posso ajudar",
+      en: "How I can help",
+    },
+    title: {
+      pt: "Desenvolvedor React Native freelancer para o seu produto",
+      en: "Freelance React Native developer for your product",
+    },
+    description: {
+      pt: "Se você precisa contratar um desenvolvedor React Native para criar um app, evoluir um produto existente ou reforçar o time com PJ/freelance remoto, posso assumir fretes bem definidos com comunicação clara e entrega previsível.",
+      en: "If you need to hire a React Native developer to build an app, evolve an existing product, or reinforce your team with remote freelance/contract work, I can take well-scoped deliveries with clear communication.",
+    },
+    cta: {
+      pt: "Quero contratar pelo WhatsApp",
+      en: "Hire me on WhatsApp",
+    },
+    faqTitle: {
+      pt: "Perguntas frequentes sobre contratação",
+      en: "Frequently asked hiring questions",
+    },
+    services: [
+      {
+        title: {
+          pt: "App React Native do zero",
+          en: "React Native app from scratch",
+        },
+        description: {
+          pt: "Ideal para startups e negócios que precisam lançar um aplicativo iOS e Android com arquitetura limpa, autenticação, APIs e publicação nas lojas.",
+          en: "Ideal for startups and businesses that need to launch an iOS and Android app with clean architecture, authentication, APIs and store publishing.",
+        },
+      },
+      {
+        title: {
+          pt: "Manutenção e evolução de apps",
+          en: "App maintenance and evolution",
+        },
+        description: {
+          pt: "Correção de bugs, performance, novas telas, integrações e refatoração de código em produtos React Native já em produção.",
+          en: "Bug fixes, performance, new screens, integrations and refactoring for React Native products already in production.",
+        },
+      },
+      {
+        title: {
+          pt: "Frontend web com React e Next.js",
+          en: "Web frontend with React and Next.js",
+        },
+        description: {
+          pt: "Painéis, landing pages e produtos web com foco em performance, SEO técnico e experiência consistente em desktop e mobile.",
+          en: "Dashboards, landing pages and web products focused on performance, technical SEO and consistent desktop/mobile experience.",
+        },
+      },
+      {
+        title: {
+          pt: "Consultoria e reforço de time",
+          en: "Consulting and team augmentation",
+        },
+        description: {
+          pt: "Atuação como desenvolvedor React Native sênior sob demanda (PJ ou freelance) para acelerar entregas sem abrir mão de qualidade.",
+          en: "Work as a senior React Native developer on demand (contract or freelance) to accelerate delivery without sacrificing quality.",
+        },
+      },
+    ],
+    faqs: [
+      {
+        question: {
+          pt: "Você aceita projetos freelance e PJ?",
+          en: "Do you accept freelance and contractor projects?",
+        },
+        answer: {
+          pt: "Sim. Atendo freelance, PJ e consultoria remota no Brasil, além de oportunidades CLT quando o encaixe faz sentido. O primeiro passo é conversar sobre escopo, prazo e prioridade do produto.",
+          en: "Yes. I take freelance, contractor and remote consulting work in Brazil, plus full-time roles when the fit makes sense. The first step is aligning on scope, timeline and product priorities.",
+        },
+      },
+      {
+        question: {
+          pt: "Que tipo de app React Native você desenvolve?",
+          en: "What kind of React Native apps do you build?",
+        },
+        answer: {
+          pt: "Apps com jornadas reais de produto: autenticação, dashboards, fluxos financeiros, operações em campo, e-commerce e integrações com APIs, Firebase e serviços nativos como biometria e geolocalização.",
+          en: "Product-oriented apps: authentication, dashboards, financial flows, field operations, e-commerce and integrations with APIs, Firebase and native features like biometrics and geolocation.",
+        },
+      },
+      {
+        question: {
+          pt: "Como funciona o início de um projeto?",
+          en: "How does a project kickoff work?",
+        },
+        answer: {
+          pt: "Você me conta o objetivo, o prazo e o que já existe. Eu retorno com entendimento do escopo, riscos técnicos e uma proposta de entrega. Depois alinhamos comunicação, milestones e forma de acompanhamento.",
+          en: "You share the goal, timeline and what already exists. I come back with scope understanding, technical risks and a delivery proposal. Then we align communication, milestones and follow-up cadence.",
+        },
+      },
+      {
+        question: {
+          pt: "Você trabalha apenas com mobile?",
+          en: "Do you only work with mobile?",
+        },
+        answer: {
+          pt: "Meu foco principal é React Native para iOS e Android, mas também desenvolvo e evoluo produtos web com React e Next.js quando o projeto precisa dos dois lados.",
+          en: "My main focus is React Native for iOS and Android, but I also build and evolve web products with React and Next.js when a project needs both sides.",
+        },
+      },
+      {
+        question: {
+          pt: "Qual a melhor forma de falar com você?",
+          en: "What is the best way to contact you?",
+        },
+        answer: {
+          pt: "WhatsApp para conversa rápida sobre o projeto, ou e-mail/formulário se preferir registrar o briefing por escrito. LinkedIn e GitHub também estão disponíveis para avaliação técnica.",
+          en: "WhatsApp for a quick project conversation, or email/form if you prefer a written brief. LinkedIn and GitHub are also available for technical evaluation.",
+        },
+      },
+    ],
   },
 
   // TextAnim section

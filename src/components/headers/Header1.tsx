@@ -75,12 +75,17 @@ export default function Header1() {
                       <i className="fa-brands fa-github" aria-hidden="true" />
                     </a>
                     <a
-                      href="https://wa.me/5551998884446"
+                      className="header-whatsapp-highlight"
+                      href="https://wa.me/5551998884446?text=Ol%C3%A1%20Cristiano%2C%20quero%20tirar%20um%20projeto%20do%20papel"
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label={a11y.whatsapp[lang]}
+                      title={translations.nav.project[lang]}
                     >
                       <i className="fa-brands fa-whatsapp" aria-hidden="true" />
+                      <span className="header-whatsapp-highlight__label">
+                        WhatsApp
+                      </span>
                     </a>
                     <a
                       href="mailto:cristianovieirati@gmail.com"

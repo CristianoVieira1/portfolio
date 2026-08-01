@@ -1178,7 +1178,7 @@
       font-size: 25px;
       line-height: 1.5;
     }
-    span {
+    .text-anim-highlight {
       @include neon-gradient-text;
     }
   }

@@ -10,6 +10,7 @@ export default function Nav1() {
   const menuItems = [
     { label: nav.home[lang], href: "#home", isLink: false, hasDropdown: false, submenu: [] as { href: string; label: string }[] },
     { label: nav.about[lang], href: "#about", isLink: false, hasDropdown: false, submenu: [] as { href: string; label: string }[] },
+    { label: nav.project[lang], href: "#projeto", isLink: false, hasDropdown: false, submenu: [] as { href: string; label: string }[] },
     { label: nav.experience[lang], href: "#resume-section", isLink: false, hasDropdown: false, submenu: [] as { href: string; label: string }[] },
     { label: nav.portfolio[lang], href: "#portfolio", isLink: false, hasDropdown: false, submenu: [] as { href: string; label: string }[] },
     { label: nav.contact[lang], href: "#contacts", isLink: false, hasDropdown: false, submenu: [] as { href: string; label: string }[] },
