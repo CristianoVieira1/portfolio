@@ -12,26 +12,36 @@ import Experience from "@/components/homes/home-2/Experience";
 import Hero from "@/components/homes/home-2/Hero";
 
 import MetaComponent from "@/components/common/Metacomponent";
+import { useLanguage } from "@/context/LanguageContext";
+import { translations } from "@/i18n/translations";
 
 const metadata = {
-  title: "Cristiano Borges | Desenvolvedor React Native, React e Next.js",
+  title: "Cristiano Borges | Desenvolvedor React Native Sênior",
   description:
-    "Desenvolvedor freelancer especializado em aplicativos mobile com React Native e aplicações web com React e Next.js.",
+    "Portfólio de Cristiano Borges, desenvolvedor React Native com mais de 6 anos de experiência em aplicativos iOS, Android e produtos web.",
 };
+
 export default function HomePage2() {
+  const { lang } = useLanguage();
+
   return (
     <>
       <MetaComponent meta={metadata} />
+      <a className="skip-link" href="#main">
+        {translations.a11y.skipToContent[lang]}
+      </a>
       <Header1 />
-      <Hero />
-      <TextAnim />
-      <About />
-      <Experience />
-      <Skills />
-      <Portofolio />
-      <Experiences2 />
-      <TechStackSection />
-      <Contact />
+      <main id="main">
+        <Hero />
+        <TextAnim />
+        <About />
+        <Experience />
+        <Skills />
+        <Portofolio />
+        <Experiences2 />
+        <TechStackSection />
+        <Contact />
+      </main>
       <Footer2 />
       <Copyright />
     </>

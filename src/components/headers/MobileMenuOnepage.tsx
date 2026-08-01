@@ -1,11 +1,18 @@
 import { useModalUI } from "@/context/ModalUIContext";
+import { useLanguage } from "@/context/LanguageContext";
+import { translations } from "@/i18n/translations";
 import { useEffect, useRef } from "react";
+import NeonLogo from "../common/NeonLogo";
 import OnepageNavMobile from "./OnepageNavMobile";
 
 export default function MobileMenuOnepage() {
   const menuRef = useRef<HTMLDivElement>(null);
   const innerRef = useRef<HTMLDivElement>(null);
   const { openModals, closeModal } = useModalUI();
+  const { lang } = useLanguage();
+  const a11y = translations.a11y;
+  const ft = translations.footer;
+
   useEffect(() => {
     function handleClick(event: MouseEvent) {
       const target = event.target as Node;
@@ -34,65 +41,62 @@ export default function MobileMenuOnepage() {
         <div ref={innerRef} className="inner">
           <div className="header-top">
             <div className="logo">
-              <a href="index.html" className="logo-area">
-                <img
-                  loading="lazy"
-                  className="logo-dark"
-                  alt="Cristiano Borges"
-                  src="/portfolio/assets/images/logo/white-logo-reeni.png"
-                  width={121}
-                  height={41}
-                />
-                <img
-                  loading="lazy"
-                  className="logo-white"
-                  alt="Cristiano Borges"
-                  src="/portfolio/assets/images/logo/logo-white.png"
-                  width={121}
-                  height={40}
-                />
+              <a
+                href="#home"
+                className="logo-area"
+                aria-label={a11y.homeLink[lang]}
+                onClick={() => closeModal("mobileMenu2")}
+              >
+                <NeonLogo size="md" className="neon-header-logo" />
               </a>
             </div>
             <div className="close-menu">
               <button
+                type="button"
                 className="close-button tmp-round-action-btn"
                 onClick={() => closeModal("mobileMenu2")}
+                aria-label={a11y.closeMenu[lang]}
               >
-                <i className="fa-sharp fa-light fa-xmark" />
+                <i className="fa-sharp fa-light fa-xmark" aria-hidden="true" />
               </button>
             </div>
           </div>
           <OnepageNavMobile />
           <div className="social-wrapper mt--40">
-            <span className="subtitle">me encontre em</span>
+            <span className="subtitle">{ft.findMe[lang]}</span>
             <div className="social-link">
               <a
                 href="https://www.linkedin.com/in/cristianobv"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
+                aria-label={a11y.linkedin[lang]}
               >
-                <i className="fa-brands fa-linkedin-in" />
+                <i className="fa-brands fa-linkedin-in" aria-hidden="true" />
               </a>
               <a
                 href="https://github.com/CristianoVieira1"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
+                aria-label={a11y.github[lang]}
               >
-                <i className="fa-brands fa-github" />
+                <i className="fa-brands fa-github" aria-hidden="true" />
               </a>
               <a
                 href="https://wa.me/5551998884446"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
+                aria-label={a11y.whatsapp[lang]}
               >
-                <i className="fa-brands fa-whatsapp" />
+                <i className="fa-brands fa-whatsapp" aria-hidden="true" />
               </a>
-              <a href="mailto:cristianovieirati@gmail.com">
-                <i className="fa-light fa-envelope" />
+              <a
+                href="mailto:cristianovieirati@gmail.com"
+                aria-label={a11y.email[lang]}
+              >
+                <i className="fa-light fa-envelope" aria-hidden="true" />
               </a>
             </div>
           </div>
-          {/* social area end */}
         </div>
       </div>
     </div>

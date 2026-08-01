@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import NeonLogo from "../common/NeonLogo";
 import ScrollTop from "../common/ScrollTop";
 import MobileMenu from "../headers/MobileMenu";
@@ -11,6 +10,7 @@ export default function Footer2() {
   const { lang } = useLanguage();
   const t = translations.footer;
   const nav = translations.nav;
+  const a11y = translations.a11y;
 
   const links = [
     { href: "#home", label: nav.home[lang] },
@@ -29,23 +29,44 @@ export default function Footer2() {
               <div className="col-lg-3 col-md-4 col-sm-6">
                 <div className="single-footer-wrapper border-right mr--20">
                   <div className="logo">
-                    <Link to={`/`}>
+                    <a href="#home" aria-label={a11y.homeLink[lang]}>
                       <NeonLogo size="sm" className="neon-header-logo" />
-                    </Link>
+                    </a>
                   </div>
                   <p className="description">{t.description[lang]}</p>
                   <div className="social-link footer">
-                    <a href="https://www.linkedin.com/in/cristianobv" target="_blank" rel="noreferrer">
-                      <i className="fa-brands fa-linkedin-in" />
+                    <a
+                      href="https://www.linkedin.com/in/cristianobv"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={a11y.linkedin[lang]}
+                    >
+                      <i
+                        className="fa-brands fa-linkedin-in"
+                        aria-hidden="true"
+                      />
                     </a>
-                    <a href="https://github.com/CristianoVieira1" target="_blank" rel="noreferrer">
-                      <i className="fa-brands fa-github" />
+                    <a
+                      href="https://github.com/CristianoVieira1"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={a11y.github[lang]}
+                    >
+                      <i className="fa-brands fa-github" aria-hidden="true" />
                     </a>
-                    <a href="https://wa.me/5551998884446" target="_blank" rel="noreferrer">
-                      <i className="fa-brands fa-whatsapp" />
+                    <a
+                      href="https://wa.me/5551998884446"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={a11y.whatsapp[lang]}
+                    >
+                      <i className="fa-brands fa-whatsapp" aria-hidden="true" />
                     </a>
-                    <a href="mailto:cristianovieirati@gmail.com">
-                      <i className="fa-light fa-envelope" />
+                    <a
+                      href="mailto:cristianovieirati@gmail.com"
+                      aria-label={a11y.email[lang]}
+                    >
+                      <i className="fa-light fa-envelope" aria-hidden="true" />
                     </a>
                   </div>
                 </div>
@@ -75,21 +96,28 @@ export default function Footer2() {
                   <ul className="ft-link tmp-scroll-trigger animation-order-1 tmp-link-animation">
                     <li>
                       <span className="ft-icon">
-                        <i className="fa-solid fa-phone" />
+                        <i className="fa-solid fa-phone" aria-hidden="true" />
                       </span>
-                      <a href="https://wa.me/5551998884446">+55 51 99888-4446</a>
+                      <a href="https://wa.me/5551998884446">
+                        +55 51 99888-4446
+                      </a>
                     </li>
                     <li>
                       <span className="ft-icon">
-                        <i className="fa-solid fa-location-dot" />
+                        <i
+                          className="fa-solid fa-location-dot"
+                          aria-hidden="true"
+                        />
                       </span>
                       {t.locationValue[lang]}
                     </li>
                     <li>
                       <span className="ft-icon">
-                        <i className="fa-solid fa-envelope" />
+                        <i className="fa-solid fa-envelope" aria-hidden="true" />
                       </span>
-                      <a href="mailto:cristianovieirati@gmail.com">cristianovieirati@gmail.com</a>
+                      <a href="mailto:cristianovieirati@gmail.com">
+                        cristianovieirati@gmail.com
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -98,11 +126,29 @@ export default function Footer2() {
                 <div className="newslatter tmp-scroll-trigger animation-order-1">
                   <h3 className="title">{t.newsletter[lang]}</h3>
                   <p className="para">{t.newsletterDesc[lang]}</p>
-                  <form onSubmit={(e) => e.preventDefault()} className="newsletter-form-1">
-                    <input type="email" placeholder={t.emailPlaceholder[lang]} />
+                  <form
+                    onSubmit={(e) => e.preventDefault()}
+                    className="newsletter-form-1"
+                  >
+                    <label className="visually-hidden" htmlFor="footer-email">
+                      {t.emailPlaceholder[lang]}
+                    </label>
+                    <input
+                      id="footer-email"
+                      type="email"
+                      autoComplete="email"
+                      placeholder={t.emailPlaceholder[lang]}
+                    />
                     <span>
-                      <a href="mailto:cristianovieirati@gmail.com" className="form-icon">
-                        <i className="fa-solid fa-arrow-right" />
+                      <a
+                        href="mailto:cristianovieirati@gmail.com"
+                        className="form-icon"
+                        aria-label={a11y.email[lang]}
+                      >
+                        <i
+                          className="fa-solid fa-arrow-right"
+                          aria-hidden="true"
+                        />
                       </a>
                     </span>
                   </form>

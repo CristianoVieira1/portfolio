@@ -11,7 +11,7 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
 
   useEffect(() => {
     const start = Date.now();
-    const duration = 2000;
+    const duration = 700;
 
     const tick = () => {
       const elapsed = Date.now() - start;
@@ -23,7 +23,7 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
         requestAnimationFrame(tick);
       } else {
         setPhase("reveal");
-        setTimeout(onComplete, 800);
+        setTimeout(onComplete, 280);
       }
     };
 

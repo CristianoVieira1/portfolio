@@ -8,6 +8,7 @@ export default function Sidebar() {
   const { lang } = useLanguage();
   const t = translations.sidebar;
   const ft = translations.footer;
+  const a11y = translations.a11y;
 
   return (
     <div className="d-none d-xl-block">
@@ -16,24 +17,26 @@ export default function Sidebar() {
       >
         <div className="inner">
           <div className="top-area">
-            <a href="index.html" className="logo">
+            <a href="#home" className="logo" aria-label={a11y.homeLink[lang]}>
               <NeonLogo size="sm" className="neon-header-logo" />
             </a>
             <div className="close-icon-area">
               <button
+                type="button"
                 className="tmp-round-action-btn close_side_menu_active"
                 onClick={() => closeModal("sidebar")}
+                aria-label={a11y.closeSidebar[lang]}
               >
-                <i className="fa-sharp fa-light fa-xmark" />
+                <i className="fa-sharp fa-light fa-xmark" aria-hidden="true" />
               </button>
             </div>
           </div>
           <div className="content-wrapper">
             <div className="image-area-feature">
-              <a href="index.html">
+              <a href="#home" aria-label={a11y.homeLink[lang]}>
                 <img
                   loading="lazy"
-                  alt="personal-logo"
+                  alt="Cristiano Borges"
                   src="/portfolio/share.png"
                   width={340}
                   height={196}
@@ -44,7 +47,7 @@ export default function Sidebar() {
             <p className="disc">{t.description[lang]}</p>
             <div className="short-contact-area">
               <div className="single-contact">
-                <i className="fa-solid fa-phone" />
+                <i className="fa-solid fa-phone" aria-hidden="true" />
                 <div className="information tmp-link-animation">
                   <span>{ft.whatsapp[lang]}</span>
                   <a href="https://wa.me/5551998884446" className="number">
@@ -53,7 +56,7 @@ export default function Sidebar() {
                 </div>
               </div>
               <div className="single-contact">
-                <i className="fa-solid fa-envelope" />
+                <i className="fa-solid fa-envelope" aria-hidden="true" />
                 <div className="information tmp-link-animation">
                   <span>{ft.emailLabel[lang]}</span>
                   <a
@@ -65,7 +68,10 @@ export default function Sidebar() {
                 </div>
               </div>
               <div className="single-contact">
-                <i className="fa-solid fa-location-crosshairs" />
+                <i
+                  className="fa-solid fa-location-crosshairs"
+                  aria-hidden="true"
+                />
                 <div className="information tmp-link-animation">
                   <span>{ft.location[lang]}</span>
                   <span className="number">{ft.locationValue[lang]}</span>
@@ -78,36 +84,43 @@ export default function Sidebar() {
                 <a
                   href="https://www.linkedin.com/in/cristianobv"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
+                  aria-label={a11y.linkedin[lang]}
                 >
-                  <i className="fa-brands fa-linkedin-in" />
+                  <i className="fa-brands fa-linkedin-in" aria-hidden="true" />
                 </a>
                 <a
                   href="https://github.com/CristianoVieira1"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
+                  aria-label={a11y.github[lang]}
                 >
-                  <i className="fa-brands fa-github" />
+                  <i className="fa-brands fa-github" aria-hidden="true" />
                 </a>
                 <a
                   href="https://wa.me/5551998884446"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
+                  aria-label={a11y.whatsapp[lang]}
                 >
-                  <i className="fa-brands fa-whatsapp" />
+                  <i className="fa-brands fa-whatsapp" aria-hidden="true" />
                 </a>
-                <a href="mailto:cristianovieirati@gmail.com">
-                  <i className="fa-light fa-envelope" />
+                <a
+                  href="mailto:cristianovieirati@gmail.com"
+                  aria-label={a11y.email[lang]}
+                >
+                  <i className="fa-light fa-envelope" aria-hidden="true" />
                 </a>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <a
+      <button
+        type="button"
         className="overlay_close_side_menu close_side_menu_active"
         onClick={() => closeModal("sidebar")}
-        href="#"
+        aria-label={a11y.closeSidebar[lang]}
       />
     </div>
   );

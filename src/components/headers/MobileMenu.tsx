@@ -78,16 +78,23 @@ export default function MobileMenu() {
         <div ref={innerRef} className="inner">
           <div className="header-top">
             <div className="logo">
-              <a href="index.html" className="logo-area">
+              <a
+                href="#home"
+                className="logo-area"
+                aria-label={translations.a11y.homeLink[lang]}
+                onClick={() => closeModal("mobileMenu1")}
+              >
                 <NeonLogo size="md" className="neon-header-logo" />
               </a>
             </div>
             <div className="close-menu">
               <button
+                type="button"
                 className="close-button tmp-round-action-btn"
                 onClick={() => closeModal("mobileMenu1")}
+                aria-label={translations.a11y.closeMenu[lang]}
               >
-                <i className="fa-sharp fa-light fa-xmark" />
+                <i className="fa-sharp fa-light fa-xmark" aria-hidden="true" />
               </button>
             </div>
           </div>
@@ -156,26 +163,32 @@ export default function MobileMenu() {
               <a
                 href="https://www.linkedin.com/in/cristianobv"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
+                aria-label={translations.a11y.linkedin[lang]}
               >
-                <i className="fa-brands fa-linkedin-in" />
+                <i className="fa-brands fa-linkedin-in" aria-hidden="true" />
               </a>
               <a
                 href="https://github.com/CristianoVieira1"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
+                aria-label={translations.a11y.github[lang]}
               >
-                <i className="fa-brands fa-github" />
+                <i className="fa-brands fa-github" aria-hidden="true" />
               </a>
               <a
                 href="https://wa.me/5551998884446"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
+                aria-label={translations.a11y.whatsapp[lang]}
               >
-                <i className="fa-brands fa-whatsapp" />
+                <i className="fa-brands fa-whatsapp" aria-hidden="true" />
               </a>
-              <a href="mailto:cristianovieirati@gmail.com">
-                <i className="fa-light fa-envelope" />
+              <a
+                href="mailto:cristianovieirati@gmail.com"
+                aria-label={translations.a11y.email[lang]}
+              >
+                <i className="fa-light fa-envelope" aria-hidden="true" />
               </a>
             </div>
           </div>

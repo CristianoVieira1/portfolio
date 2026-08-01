@@ -44,6 +44,9 @@ export default function About({ parentClass = "about-us-area" }) {
                 <p className="description about-description-text tmp-scroll-trigger tmp-fade-in animation-order-3">
                   {t.description[lang]}
                 </p>
+                <p className="about-availability tmp-scroll-trigger tmp-fade-in animation-order-3">
+                  {t.availability[lang]}
+                </p>
               </div>
               <div className="about-us-section-card row g-5">
                 <div className="col-lg-6 col-md-6 col-sm-6 col-12">
@@ -51,7 +54,8 @@ export default function About({ parentClass = "about-us-area" }) {
                     <div className="card-head">
                       <div className="logo-img">
                         <img
-                          alt="logo"
+                          alt=""
+                          aria-hidden="true"
                           loading="lazy"
                           src="/portfolio/assets/images/about/react.svg"
                           width={24}
@@ -69,7 +73,8 @@ export default function About({ parentClass = "about-us-area" }) {
                       <div className="logo-img">
                         <img
                           loading="lazy"
-                          alt="logo"
+                          alt=""
+                          aria-hidden="true"
                           src="/portfolio/assets/images/about/nextjs.svg"
                           width={24}
                           height={24}
@@ -92,8 +97,8 @@ export default function About({ parentClass = "about-us-area" }) {
                 </a>
                 <a
                   className="about-cv-link"
-                  href="/portfolio/assets/pdf/CristianoBorges.pdf"
-                  download="CristianoBorges.pdf"
+                  href="/portfolio/Cristiano-Borges-React-Native.pdf"
+                  download="Cristiano-Borges-React-Native.pdf"
                 >
                   <span className="about-cv-link__text">
                     {t.downloadCvBtn[lang]}

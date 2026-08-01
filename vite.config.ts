@@ -2,6 +2,7 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { VitePWA } from "vite-plugin-pwa";
+
 // https://vitejs.dev/config/
 export default defineConfig({
   base: "/portfolio/",
@@ -9,30 +10,29 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: "autoUpdate",
-      includeAssets: ["favicon/favicon.svg", "favicon/apple-touch-icon.png"],
+      includeAssets: [
+        "favicon.svg",
+        "robots.txt",
+        "sitemap.xml",
+        "Cristiano-Borges-React-Native.pdf",
+      ],
+      workbox: {
+        navigateFallback: null,
+        globPatterns: ["**/*.{js,css,html,ico,png,svg,webp,woff2}"],
+        navigateFallbackDenylist: [/^\/portfolio\/(robots\.txt|sitemap\.xml|.*\.pdf)/],
+      },
       manifest: {
-        name: "Reeni Reactjs",
-        short_name: "Reeni",
-        description: "Personal Portfolio Reactjs Template",
-        theme_color: "#ffffff",
-        display: "standalone", // ✅ ADD THIS
+        name: "Cristiano Borges Portfolio",
+        short_name: "Cristiano",
+        description:
+          "Portfólio de Cristiano Borges, desenvolvedor React Native.",
+        theme_color: "#0f172a",
+        display: "standalone",
         icons: [
           {
-            src: "/favicon/web-app-manifest-192x192.png",
-            sizes: "192x192",
-            type: "image/png",
-            purpose: "any maskable",
-          },
-          {
-            src: "/favicon/web-app-manifest-512x512.png",
-            sizes: "512x512",
-            type: "image/png",
-            purpose: "any maskable",
-          },
-          {
-            src: "/favicon/web-app-manifest-512x512.png",
-            sizes: "512x512",
-            type: "image/png",
+            src: "/portfolio/favicon.svg",
+            sizes: "any",
+            type: "image/svg+xml",
             purpose: "any maskable",
           },
         ],

@@ -1,15 +1,15 @@
 import NeonLogo from "../common/NeonLogo";
 import Nav1 from "./Nav1";
 
-import { Link } from "react-router-dom";
-
 import { useLanguage } from "@/context/LanguageContext";
 import { useModalUI } from "@/context/ModalUIContext";
+import { translations } from "@/i18n/translations";
 import { useEffect, useState } from "react";
 
 export default function Header1() {
   const { openModal } = useModalUI();
   const { lang, toggleLanguage } = useLanguage();
+  const a11y = translations.a11y;
   const [isSticky, setIsSticky] = useState(false);
 
   useEffect(() => {
@@ -42,11 +42,14 @@ export default function Header1() {
           <div className="col-lg-12">
             <div className="header-content">
               <div className="logo">
-                <Link to={`/`}>
+                <a href="#home" aria-label={a11y.homeLink[lang]}>
                   <NeonLogo size="md" className="neon-header-logo" />
-                </Link>
+                </a>
               </div>
-              <nav className="tmp-mainmenu-nav d-none d-xl-block">
+              <nav
+                className="tmp-mainmenu-nav d-none d-xl-block"
+                aria-label={lang === "pt" ? "Menu principal" : "Main menu"}
+              >
                 <Nav1 />
               </nav>
               <div className="tmp-header-right">
@@ -55,32 +58,43 @@ export default function Header1() {
                     <a
                       href="https://www.linkedin.com/in/cristianobv"
                       target="_blank"
-                      rel="noreferrer"
+                      rel="noopener noreferrer"
+                      aria-label={a11y.linkedin[lang]}
                     >
-                      <i className="fa-brands fa-linkedin-in" />
+                      <i
+                        className="fa-brands fa-linkedin-in"
+                        aria-hidden="true"
+                      />
                     </a>
                     <a
                       href="https://github.com/CristianoVieira1"
                       target="_blank"
-                      rel="noreferrer"
+                      rel="noopener noreferrer"
+                      aria-label={a11y.github[lang]}
                     >
-                      <i className="fa-brands fa-github" />
+                      <i className="fa-brands fa-github" aria-hidden="true" />
                     </a>
                     <a
                       href="https://wa.me/5551998884446"
                       target="_blank"
-                      rel="noreferrer"
+                      rel="noopener noreferrer"
+                      aria-label={a11y.whatsapp[lang]}
                     >
-                      <i className="fa-brands fa-whatsapp" />
+                      <i className="fa-brands fa-whatsapp" aria-hidden="true" />
                     </a>
-                    <a href="mailto:cristianovieirati@gmail.com">
-                      <i className="fa-light fa-envelope" />
+                    <a
+                      href="mailto:cristianovieirati@gmail.com"
+                      aria-label={a11y.email[lang]}
+                    >
+                      <i className="fa-light fa-envelope" aria-hidden="true" />
                     </a>
                   </div>
                 </div>
                 <button
                   className="lang-toggle-btn"
                   onClick={toggleLanguage}
+                  type="button"
+                  aria-label={a11y.toggleLanguage[lang]}
                   title={
                     lang === "pt" ? "Switch to English" : "Mudar para Português"
                   }
@@ -90,7 +104,9 @@ export default function Header1() {
                   >
                     PT
                   </span>
-                  <span className="lang-separator">/</span>
+                  <span className="lang-separator" aria-hidden="true">
+                    /
+                  </span>
                   <span
                     className={`lang-option ${lang === "en" ? "active" : ""}`}
                   >
@@ -100,18 +116,28 @@ export default function Header1() {
                 <div className="actions-area">
                   <div className="tmp-side-collups-area d-none d-xl-block">
                     <button
+                      type="button"
                       className="tmp-menu-bars tmp_button_active"
                       onClick={() => openModal("sidebar")}
+                      aria-label={a11y.openSidebar[lang]}
                     >
-                      <i className="fa-regular fa-bars-staggered" />
+                      <i
+                        className="fa-regular fa-bars-staggered"
+                        aria-hidden="true"
+                      />
                     </button>
                   </div>
                   <div className="tmp-side-collups-area d-block d-xl-none">
                     <button
+                      type="button"
                       className="tmp-menu-bars humberger_menu_active"
                       onClick={() => openModal("mobileMenu1")}
+                      aria-label={a11y.openMenu[lang]}
                     >
-                      <i className="fa-regular fa-bars-staggered" />
+                      <i
+                        className="fa-regular fa-bars-staggered"
+                        aria-hidden="true"
+                      />
                     </button>
                   </div>
                 </div>

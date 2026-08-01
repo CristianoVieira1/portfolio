@@ -17,11 +17,13 @@ export const translations = {
       pt: "Cristiano Borges, desenvolvedor",
       en: "Cristiano Borges, developer",
     },
-    titleHighlight: { pt: "React Native", en: "React Native" },
+    titleHighlight: { pt: "React Native Sênior", en: "Senior React Native" },
     description: {
-      pt: "Sou desenvolvedor especializado em <span>React Native</span>, criando aplicativos Android e iOS há mais de 6 anos. Também desenvolvo soluções web com <span>React e Next.js</span> com foco em performance, experiência do usuário e evolução contínua do produto.",
-      en: "I'm a developer specialized in <span>React Native</span>, building Android and iOS apps for over 6 years. I also develop web solutions with <span>React and Next.js</span> focused on performance, user experience and continuous product evolution.",
+      pt: "Crio aplicativos iOS e Android rápidos, estáveis e prontos para evoluir — mais de 6 anos construindo produtos digitais com <span>React Native</span>, além de soluções web com <span>React e Next.js</span>.",
+      en: "I build fast, stable iOS and Android apps ready to evolve — 6+ years shipping digital products with <span>React Native</span>, plus web solutions with <span>React and Next.js</span>.",
     },
+    primaryCta: { pt: "Falar sobre um projeto", en: "Talk about a project" },
+    secondaryCta: { pt: "Ver projetos", en: "View projects" },
     aboutBtn: { pt: "Sobre mim", en: "About me" },
     findMe: { pt: "Me encontre em", en: "Find me on" },
   },
@@ -65,7 +67,11 @@ export const translations = {
     },
     talkBtn: { pt: "Falar sobre projeto", en: "Talk about a project" },
     viewProjectsBtn: { pt: "Ver projetos", en: "View projects" },
-    downloadCvBtn: { pt: "Baixar CV", en: "Download CV" },
+    downloadCvBtn: { pt: "Baixar currículo em PDF", en: "Download resume PDF" },
+    availability: {
+      pt: "Disponível para CLT, PJ, freelance e consultoria. Português (nativo) e inglês (intermediário).",
+      en: "Available for full-time, contractor, freelance and consulting. Portuguese (native) and English (intermediate).",
+    },
   },
 
   // Experience / Resume
@@ -78,7 +84,9 @@ export const translations = {
   skills: {
     mobileSkills: { pt: "Habilidades Mobile", en: "Mobile Skills" },
     webSkills: { pt: "Habilidades Web", en: "Web Skills" },
-    responsiveUI: { pt: "UI RESPONSIVA", en: "RESPONSIVE UI" },
+    responsiveUI: { pt: "UI responsiva", en: "Responsive UI" },
+    advanced: { pt: "Avançado", en: "Advanced" },
+    solid: { pt: "Sólido", en: "Solid" },
   },
 
   // Portfolio
@@ -93,6 +101,16 @@ export const translations = {
       en: "Some projects developed with focus on conversion, performance and user experience on mobile and web.",
     },
     viewProject: { pt: "Ver projeto", en: "View project" },
+    showAll: { pt: "Ver todos os projetos", en: "Show all projects" },
+    showLess: { pt: "Ver menos", en: "Show less" },
+    roleLabel: { pt: "Meu papel", en: "My role" },
+    challengeLabel: { pt: "Desafio", en: "Challenge" },
+    solutionLabel: { pt: "Solução", en: "Solution" },
+    resultLabel: { pt: "Resultado", en: "Result" },
+    ctaAfterProject: {
+      pt: "Precisa de um aplicativo com integrações e arquitetura escalável? Vamos conversar.",
+      en: "Need an app with integrations and scalable architecture? Let's talk.",
+    },
     all: { pt: "Todos", en: "All" },
   },
 
@@ -162,6 +180,11 @@ export const translations = {
     },
     submit: { pt: "Enviar mensagem", en: "Send message" },
     sending: { pt: "Enviando...", en: "Sending..." },
+    whatsappAlt: {
+      pt: "Prefere falar diretamente? Envie uma mensagem pelo WhatsApp.",
+      en: "Prefer to talk directly? Send a message on WhatsApp.",
+    },
+    whatsappCta: { pt: "Abrir WhatsApp", en: "Open WhatsApp" },
     success: {
       pt: "Mensagem enviada com sucesso!",
       en: "Message sent successfully!",
@@ -174,9 +197,42 @@ export const translations = {
       pt: "Não foi possível enviar agora. Tente novamente.",
       en: "Could not send now. Please try again.",
     },
+    errorConfig: {
+      pt: "O formulário ainda não está configurado. Use o WhatsApp para falar comigo.",
+      en: "The form is not configured yet. Use WhatsApp to reach me.",
+    },
     errorGeneric: {
       pt: "Ocorreu um erro ao enviar sua mensagem.",
       en: "An error occurred while sending your message.",
+    },
+  },
+
+  a11y: {
+    skipToContent: { pt: "Pular para o conteúdo", en: "Skip to content" },
+    openMenu: { pt: "Abrir menu", en: "Open menu" },
+    closeMenu: { pt: "Fechar menu", en: "Close menu" },
+    openSidebar: { pt: "Abrir painel lateral", en: "Open sidebar" },
+    closeSidebar: { pt: "Fechar painel lateral", en: "Close sidebar" },
+    homeLink: { pt: "Voltar ao início", en: "Back to home" },
+    linkedin: {
+      pt: "LinkedIn de Cristiano Borges",
+      en: "Cristiano Borges on LinkedIn",
+    },
+    github: {
+      pt: "GitHub de Cristiano Borges",
+      en: "Cristiano Borges on GitHub",
+    },
+    whatsapp: {
+      pt: "WhatsApp de Cristiano Borges",
+      en: "Cristiano Borges on WhatsApp",
+    },
+    email: {
+      pt: "Enviar e-mail para Cristiano Borges",
+      en: "Email Cristiano Borges",
+    },
+    toggleLanguage: {
+      pt: "Alternar idioma",
+      en: "Toggle language",
     },
   },
 
