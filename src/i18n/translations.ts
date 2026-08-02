@@ -6,6 +6,7 @@ export const translations = {
     home: { pt: "Início", en: "Home" },
     about: { pt: "Sobre", en: "About" },
     project: { pt: "Vamos fazer um projeto", en: "Let's build a project" },
+    projectShort: { pt: "Fazer um projeto", en: "Start a project" },
     experience: { pt: "Experiência", en: "Experience" },
     portfolio: { pt: "Portfólio", en: "Portfolio" },
     contact: { pt: "Contato", en: "Contact" },

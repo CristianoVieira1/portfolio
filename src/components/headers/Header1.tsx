@@ -6,6 +6,9 @@ import { useModalUI } from "@/context/ModalUIContext";
 import { translations } from "@/i18n/translations";
 import { useEffect, useState } from "react";
 
+const WHATSAPP_URL =
+  "https://wa.me/5551998884446?text=Ol%C3%A1%20Cristiano%2C%20quero%20tirar%20um%20projeto%20do%20papel";
+
 export default function Header1() {
   const { openModal } = useModalUI();
   const { lang, toggleLanguage } = useLanguage();
@@ -75,17 +78,13 @@ export default function Header1() {
                       <i className="fa-brands fa-github" aria-hidden="true" />
                     </a>
                     <a
-                      className="header-whatsapp-highlight"
-                      href="https://wa.me/5551998884446?text=Ol%C3%A1%20Cristiano%2C%20quero%20tirar%20um%20projeto%20do%20papel"
+                      className="is-whatsapp"
+                      href={WHATSAPP_URL}
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label={a11y.whatsapp[lang]}
-                      title={translations.nav.project[lang]}
                     >
                       <i className="fa-brands fa-whatsapp" aria-hidden="true" />
-                      <span className="header-whatsapp-highlight__label">
-                        WhatsApp
-                      </span>
                     </a>
                     <a
                       href="mailto:cristianovieirati@gmail.com"
@@ -95,6 +94,15 @@ export default function Header1() {
                     </a>
                   </div>
                 </div>
+                <a
+                  className="header-project-btn d-none d-lg-inline-flex"
+                  href={WHATSAPP_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="fa-brands fa-whatsapp" aria-hidden="true" />
+                  <span>{translations.nav.projectShort[lang]}</span>
+                </a>
                 <button
                   className="lang-toggle-btn"
                   onClick={toggleLanguage}

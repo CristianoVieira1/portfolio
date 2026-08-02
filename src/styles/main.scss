@@ -37,15 +37,17 @@
 }
 
 .text-para-doc-wrap .text-para-documents.text-para-documents--clean {
-  color: #d7dbe3;
+  color: #e8ecf4;
   background: none !important;
   -webkit-text-fill-color: currentColor !important;
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
 .text-para-doc-wrap .text-para-documents.text-para-documents--clean .text-anim-word {
   display: inline-block;
-  color: #d7dbe3;
+  color: #e8ecf4;
   background: none !important;
   -webkit-text-fill-color: currentColor !important;
   will-change: transform, opacity;
