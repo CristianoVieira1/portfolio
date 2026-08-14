@@ -27,7 +27,9 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
     setLangState(newLang);
     try {
       localStorage.setItem("lang", newLang);
-    } catch {}
+    } catch {
+      // Storage can be unavailable in privacy-restricted browsers.
+    }
   }, []);
 
   const toggleLanguage = useCallback(() => {
@@ -41,6 +43,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   );
 }
 
+// eslint-disable-next-line react-refresh/only-export-components
 export function useLanguage() {
   return useContext(LanguageContext);
 }

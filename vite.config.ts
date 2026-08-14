@@ -11,28 +11,39 @@ export default defineConfig({
     VitePWA({
       registerType: "autoUpdate",
       includeAssets: [
-        "favicon.svg",
+        "favicon.ico",
+        "favicon-32.png",
+        "favicon-180.png",
+        "favicon-192.png",
+        "favicon-512.png",
         "robots.txt",
         "sitemap.xml",
         "Cristiano-Borges-React-Native.pdf",
       ],
       workbox: {
         navigateFallback: null,
-        globPatterns: ["**/*.{js,css,html,ico,png,svg,webp,woff2}"],
+        globPatterns: ["**/*.{js,css,html,ico,svg,woff2}"],
         navigateFallbackDenylist: [/^\/portfolio\/(robots\.txt|sitemap\.xml|.*\.pdf)/],
       },
       manifest: {
-        name: "Cristiano Borges Portfolio",
-        short_name: "Cristiano",
+        name: "Cristiano Borges — Mobile Product Developer",
+        short_name: "Cristiano Borges",
         description:
-          "Portfólio de Cristiano Borges, desenvolvedor React Native.",
-        theme_color: "#0f172a",
+          "Desenvolvimento React Native sênior para produtos mobile.",
+        theme_color: "#07090d",
+        background_color: "#07090d",
         display: "standalone",
         icons: [
           {
-            src: "/portfolio/favicon.svg",
-            sizes: "any",
-            type: "image/svg+xml",
+            src: "/portfolio/favicon-192.png",
+            sizes: "192x192",
+            type: "image/png",
+            purpose: "any maskable",
+          },
+          {
+            src: "/portfolio/favicon-512.png",
+            sizes: "512x512",
+            type: "image/png",
             purpose: "any maskable",
           },
         ],

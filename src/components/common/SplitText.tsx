@@ -42,7 +42,12 @@ const SplitText = ({
   }, [text]);
 
   return (
-    <Tag ref={ref as any} className={`inline ${className}`}>
+    <Tag
+      ref={(node) => {
+        ref.current = node;
+      }}
+      className={`inline ${className}`}
+    >
       {words.map((word, wi) => (
         <span
           key={`${text}-${wi}`}
