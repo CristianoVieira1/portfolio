@@ -2,6 +2,7 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { VitePWA } from "vite-plugin-pwa";
+import { seoPagesPlugin } from "./vite-plugin-seo-pages";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -26,10 +27,10 @@ export default defineConfig({
         navigateFallbackDenylist: [/^\/portfolio\/(robots\.txt|sitemap\.xml|.*\.pdf)/],
       },
       manifest: {
-        name: "Cristiano Borges — Mobile Product Developer",
+        name: "Cristiano Borges — Engenharia de software",
         short_name: "Cristiano Borges",
         description:
-          "Desenvolvimento React Native sênior para produtos mobile.",
+          "Desenvolvimento de aplicativos, sites, sistemas e SaaS.",
         theme_color: "#07090d",
         background_color: "#07090d",
         display: "standalone",
@@ -49,6 +50,7 @@ export default defineConfig({
         ],
       },
     }),
+    seoPagesPlugin(),
   ],
   resolve: {
     alias: {
